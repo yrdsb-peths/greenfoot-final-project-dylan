@@ -15,8 +15,8 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 450, 1);
+        // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
+        super(700, 500, 1);
         CountryCreate();
     }
     public void CountryCreate()
@@ -30,10 +30,18 @@ public class MyWorld extends World
         Ontario ont = new Ontario();
         addObject(ont, 198, 90);
         USEast use = new USEast();
-        addObject(use, 151, 164);
+        addObject(use, 150, 164);
         USWest usw = new USWest();
-        addObject(usw, 84, 140);
+        addObject(usw, 84, 138);
         Mexico mex = new Mexico();
-        addObject(mex, 75, 207);
+        addObject(mex, 76, 205);
+        Columbia col = new Columbia();
+        addObject(col, 131, 256);
+        Brazil bra = new Brazil();
+        addObject(bra, 168, 328);
+        Peru per = new Peru();
+        addObject(per, 110, 327);
+        Argentina arg = new Argentina();
+        addObject(arg, 130, 399);
     }
 }
