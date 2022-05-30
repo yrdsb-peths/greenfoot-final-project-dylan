@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
-        super(700, 500, 1);
+        super(900, 500, 1);
         CountryCreate();
     }
     public void CountryCreate()
@@ -43,5 +43,7 @@ public class MyWorld extends World
         addObject(per, 110, 327);
         Argentina arg = new Argentina();
         addObject(arg, 130, 399);
+        Greenland gre = new Greenland();
+        addObject(gre, 297, 42);
     }
 }
