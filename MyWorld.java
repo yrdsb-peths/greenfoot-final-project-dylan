@@ -45,5 +45,7 @@ public class MyWorld extends World
         addObject(arg, 130, 399);
         Greenland gre = new Greenland();
         addObject(gre, 297, 42);
+        Iceland ice = new Iceland();
+        addObject(ice, 0 ,0);
     }
 }
