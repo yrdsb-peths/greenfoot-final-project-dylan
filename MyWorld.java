@@ -47,5 +47,7 @@ public class MyWorld extends World
         addObject(gre, 297, 42);
         Iceland ice = new Iceland();
         addObject(ice, 0 ,0);
+        UK uni = new UK();
+        addObject(uni, 0, 0);
     }
 }
