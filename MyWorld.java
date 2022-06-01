@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
-        super(900, 500, 1);
+        super(1200, 600, 1);
         CountryCreate();
     }
     public void CountryCreate()
@@ -46,8 +46,22 @@ public class MyWorld extends World
         Greenland gre = new Greenland();
         addObject(gre, 297, 42);
         Iceland ice = new Iceland();
-        addObject(ice, 0 ,0);
+        addObject(ice, 345 ,72);
         UK uni = new UK();
-        addObject(uni, 0, 0);
+        addObject(uni, 400, 122);
+        France fra = new France();
+        addObject(fra,420 ,194);
+        Germany ger = new Germany();
+        addObject(ger, 486, 166);
+        Spain spa = new Spain();
+        addObject(spa, 399, 262);
+        Italy ita = new Italy();
+        addObject(ita, 500, 241);
+        RussiaEast rue = new RussiaEast();
+        addObject(rue, 603, 166);
+        /*        
+        RussiaWest ruw = new RussiaWest();
+        addObject(ruw, 0, 0);
+        */
     }
 }
