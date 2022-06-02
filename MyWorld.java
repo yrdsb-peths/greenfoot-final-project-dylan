@@ -59,9 +59,35 @@ public class MyWorld extends World
         addObject(ita, 500, 241);
         RussiaEast rue = new RussiaEast();
         addObject(rue, 603, 166);
-        /*        
+        Sweden swe = new Sweden();
+        addObject(swe, 539, 86);
+        RussiaMid rum = new RussiaMid();
+        addObject(rum, 766,161);  
         RussiaWest ruw = new RussiaWest();
-        addObject(ruw, 0, 0);
-        */
+        addObject(ruw, 949, 200);
+        China chi = new China();
+        addObject(chi, 869, 301);
+        CentralAsia cea = new CentralAsia();
+        addObject(cea, 703, 271);
+        Arabia ara = new Arabia();
+        addObject(ara, 585, 317);
+        AfricaNorth afn = new AfricaNorth();
+        addObject(afn, 476, 341);
+        Thailand tha = new Thailand();
+        addObject(tha, 849, 423);
+        India ind = new India();
+        addObject(ind, 718, 377);
+        AustraliaWest auw = new AustraliaWest();
+        addObject(auw, 800, 527);
+        AustraliaEast aue = new AustraliaEast();
+        addObject(aue,854, 530);
+        AfricaWest afw = new AfricaWest();
+        addObject(afw, 361, 368);
+        AfricaSouth afs = new AfricaSouth();
+        addObject(afs, 434, 479);
+        AfricaCenter afc = new AfricaCenter();
+        addObject(afc, 434, 398);
+        AfricaEast afe = new AfricaEast();
+        addObject(afe, 506, 431);
     }
 }
