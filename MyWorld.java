@@ -82,12 +82,16 @@ public class MyWorld extends World
         AustraliaEast aue = new AustraliaEast();
         addObject(aue,854, 530);
         AfricaWest afw = new AfricaWest();
-        addObject(afw, 361, 368);
+        addObject(afw, 369, 358);
         AfricaSouth afs = new AfricaSouth();
         addObject(afs, 434, 479);
         AfricaCenter afc = new AfricaCenter();
         addObject(afc, 434, 398);
         AfricaEast afe = new AfricaEast();
         addObject(afe, 506, 431);
+        Circle cir = new Circle();
+        addObject(cir, 0, 0);
+        Madagascar mad = new Madagascar();
+        addObject(mad, 532, 509);
     }
 }
