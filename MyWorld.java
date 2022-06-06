@@ -16,10 +16,11 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
-        super(1200, 600, 1);
-        CountryCreate();
+        super(1100, 600, 1);
+        countryCreate();
+        labelCreate();
     }
-    public void CountryCreate()
+    public void countryCreate()
     {
         Yukon yuk = new Yukon();
         addObject(yuk, 105, 56);
@@ -89,9 +90,21 @@ public class MyWorld extends World
         addObject(afc, 434, 398);
         AfricaEast afe = new AfricaEast();
         addObject(afe, 506, 431);
-        Circle cir = new Circle();
-        addObject(cir, 0, 0);
         Madagascar mad = new Madagascar();
         addObject(mad, 532, 509);
+        Japan jap = new Japan();
+        addObject(jap, 982, 352);
+    }
+    
+    public void labelCreate()
+    {
+        Label afcLab = new Label("2", 50);
+        addObject(afcLab, 372, 343);
+        Label useLab = new Label("3", 50);
+        addObject(useLab, 148, 152);
+        Label rueLab = new Label("1", 50);
+        addObject(rueLab, 607, 158);
+        Label spaLab = new Label("3", 50);
+        addObject(spaLab, 397, 256);
     }
 }
