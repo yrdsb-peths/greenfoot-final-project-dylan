@@ -98,13 +98,53 @@ public class MyWorld extends World
     
     public void labelCreate()
     {
-        Label afcLab = new Label("2", 50);
-        addObject(afcLab, 372, 343);
+        Label afwLab = new Label("2", 50);
+        addObject(afwLab, 372, 343);
         Label useLab = new Label("3", 50);
         addObject(useLab, 148, 152);
+        Label uswLab = new Label("2", 50);
+        addObject(uswLab, 77, 132);
         Label rueLab = new Label("1", 50);
         addObject(rueLab, 607, 158);
         Label spaLab = new Label("3", 50);
         addObject(spaLab, 397, 256);
+        Label yukLab = new Label("5", 50);
+        addObject(yukLab, 104, 53);
+        Label greLab = new Label("1", 50);
+        addObject(greLab, 299, 31);
+        Label iceLab = new Label("1", 40);
+        addObject(iceLab, 341, 71);
+        Label fraLab = new Label("7", 50);
+        addObject(fraLab, 421, 192);
+        Label gerLab = new Label("5", 50);
+        addObject(gerLab, 485, 167);
+        Label itaLab = new Label("8", 50);
+        addObject(itaLab, 517, 233);
+        Label sweLab = new Label("3", 50);
+        addObject(sweLab, 531, 67);
+        Label uniLab = new Label("4", 50);
+        addObject(uniLab, 403, 125);
+        Label araLab = new Label("3", 50);
+        addObject(araLab, 578, 339);
+        Label afnLab = new Label("6", 50);
+        addObject(afnLab, 480, 339);
+        Label indLab = new Label("4", 50);
+        addObject(indLab, 721, 375);
+        Label afeLab = new Label("8", 50);
+        addObject(afeLab, 500, 419);
+        Label afcLab = new Label("2", 50);
+        addObject(afcLab, 442, 396);
+        Label afsLab = new Label("3", 50);
+        addObject(afsLab, 418, 479);
+        Label madLab = new Label("6", 50);
+        addObject(madLab, 530, 509);
+        Label ontLab = new Label("5", 50);
+        addObject(ontLab, 209,78);
+        Label albLab = new Label("4", 35);
+        addObject(albLab, 100, 88);
+        Label alaLab = new Label("3", 50);
+        addObject(alaLab, 38, 40);
+        Label mexLab = new Label("9", 50);
+        addObject(mexLab, 74, 196);
     }
 }
