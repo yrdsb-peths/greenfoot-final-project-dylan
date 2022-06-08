@@ -104,8 +104,8 @@ public class MyWorld extends World
         addObject(useLab, 148, 152);
         Label uswLab = new Label("2", 50);
         addObject(uswLab, 77, 132);
-        Label rueLab = new Label("1", 50);
-        addObject(rueLab, 607, 158);
+        Label ruwLab = new Label("1", 50);
+        addObject(ruwLab, 607, 158);
         Label spaLab = new Label("3", 50);
         addObject(spaLab, 397, 256);
         Label yukLab = new Label("5", 50);
@@ -146,5 +146,25 @@ public class MyWorld extends World
         addObject(alaLab, 38, 40);
         Label mexLab = new Label("9", 50);
         addObject(mexLab, 74, 196);
+        Label colLab = new Label("3", 50);
+        addObject(colLab, 105, 255);
+        Label braLab = new Label("4", 50);
+        addObject(braLab, 165, 313);
+        Label perLab = new Label("1", 50);
+        addObject(perLab, 104, 309);
+        Label argLab = new Label("1", 50);
+        addObject(argLab, 127, 392);
+        Label rumLab = new Label("1", 50);
+        addObject(rumLab, 757, 155);
+        Label rueLab = new Label("1", 50);
+        addObject(rueLab, 919, 185);
+        Label chiLab = new Label("1", 50);
+        addObject(chiLab, 853, 325);
+        Label ceaLab = new Label("2", 50);
+        addObject(ceaLab, 715, 271);
+        Label thaLab = new Label("3", 50);
+        addObject(thaLab, 848, 404);
+        Label japLab = new Label("4", 50);
+        addObject(japLab, 982, 352);
     }
 }
