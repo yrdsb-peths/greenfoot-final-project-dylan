@@ -13,13 +13,18 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    public int counter = 0;
     public MyWorld()
     {    
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1);
+    }
+    public void act()
+    {
         countryCreate();
         labelCreate();
     }
+    
     public void countryCreate()
     {
         Yukon yuk = new Yukon();
@@ -92,8 +97,6 @@ public class MyWorld extends World
         addObject(afe, 506, 431);
         Madagascar mad = new Madagascar();
         addObject(mad, 532, 509);
-        Japan jap = new Japan();
-        addObject(jap, 982, 352);
     }
     
     public void labelCreate()
@@ -164,7 +167,14 @@ public class MyWorld extends World
         addObject(ceaLab, 715, 271);
         Label thaLab = new Label("3", 50);
         addObject(thaLab, 848, 404);
-        Label japLab = new Label("4", 50);
-        addObject(japLab, 982, 352);
+        Label aueLab = new Label("1", 50);
+        addObject(aueLab, 848, 529);
+        Label auwLab = new Label("1", 50);
+        addObject(auwLab, 798, 532);
+    }
+    
+    public void attack()
+    {
+        
     }
 }
