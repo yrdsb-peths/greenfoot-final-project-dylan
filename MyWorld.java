@@ -27,32 +27,6 @@ public class MyWorld extends World
     
     public void countryCreate()
     {
-        Yukon yuk = new Yukon();
-        addObject(yuk, 105, 56);
-        Alaska ala = new Alaska();
-        addObject(ala, 40, 50);
-        Alberta alb = new Alberta();
-        addObject(alb, 105, 90);
-        Ontario ont = new Ontario();
-        addObject(ont, 198, 90);
-        USEast use = new USEast();
-        addObject(use, 150, 164);
-        USWest usw = new USWest();
-        addObject(usw, 84, 138);
-        Mexico mex = new Mexico();
-        addObject(mex, 76, 205);
-        Columbia col = new Columbia();
-        addObject(col, 131, 256);
-        Brazil bra = new Brazil();
-        addObject(bra, 168, 328);
-        Peru per = new Peru();
-        addObject(per, 110, 327);
-        Argentina arg = new Argentina();
-        addObject(arg, 130, 399);
-        Greenland gre = new Greenland();
-        addObject(gre, 289, 39);
-        Iceland ice = new Iceland();
-        addObject(ice, 345 ,72);
         UK uni = new UK();
         addObject(uni, 400, 122);
         France fra = new France();
@@ -101,20 +75,10 @@ public class MyWorld extends World
     {
         Label afwLab = new Label("2", 50);
         addObject(afwLab, 372, 343);
-        Label useLab = new Label("3", 50);
-        addObject(useLab, 148, 152);
-        Label uswLab = new Label("2", 50);
-        addObject(uswLab, 77, 132);
         Label ruwLab = new Label("1", 50);
         addObject(ruwLab, 607, 158);
         Label spaLab = new Label("3", 50);
         addObject(spaLab, 397, 256);
-        Label yukLab = new Label("5", 50);
-        addObject(yukLab, 104, 53);
-        Label greLab = new Label("1", 50);
-        addObject(greLab, 290, 28);
-        Label iceLab = new Label("1", 40);
-        addObject(iceLab, 341, 71);
         Label fraLab = new Label("7", 50);
         addObject(fraLab, 421, 192);
         Label gerLab = new Label("5", 50);
@@ -137,28 +101,11 @@ public class MyWorld extends World
         addObject(afcLab, 442, 396);
         Label afsLab = new Label("3", 50);
         addObject(afsLab, 418, 479);
-        Label ontLab = new Label("5", 50);
-        addObject(ontLab, 209,78);
-        Label albLab = new Label("4", 35);
-        addObject(albLab, 100, 88);
-        Label alaLab = new Label("3", 50);
-        addObject(alaLab, 38, 40);
-        Label mexLab = new Label("9", 50);
-        addObject(mexLab, 74, 196);
-        Label colLab = new Label("3", 50);
-        addObject(colLab, 105, 255);
-        Label braLab = new Label("4", 50);
-        addObject(braLab, 165, 313);
-        Label perLab = new Label("1", 50);
-        addObject(perLab, 104, 309);
-        Label argLab = new Label("1", 50);
-        addObject(argLab, 127, 392);
+
         Label rumLab = new Label("1", 50);
         addObject(rumLab, 757, 155);
         Label rueLab = new Label("1", 50);
         addObject(rueLab, 919, 185);
-        Label chiLab = new Label("1", 50);
-        addObject(chiLab, 853, 325);
         Label ceaLab = new Label("2", 50);
         addObject(ceaLab, 715, 271);
         Label thaLab = new Label("3", 50);
@@ -171,18 +118,7 @@ public class MyWorld extends World
     
     public void connecter()
     {
-        connecter con1 = new connecter();
-        addObject(con1, 262, 345);
-        connecter con2 = new connecter();
-        addObject(con2, 321, 50);
-        connecter con3 = new connecter();
-        addObject(con3, 360, 102);
-        connecter con4 = new connecter();
-        addObject(con4, 442, 134);
-        connecter con5 = new connecter();
-        addObject(con5, 8, 32);
-        connecter con6 = new connecter();
-        addObject(con6, 1086, 204);
+
     }
     
     public void attack()
