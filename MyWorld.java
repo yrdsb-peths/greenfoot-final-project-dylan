@@ -18,11 +18,11 @@ public class MyWorld extends World
     {    
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1);
-    }
-    public void act()
-    {
+        connecter();
         countryCreate();
         labelCreate();
+        cursor cur = new cursor();
+        addObject(cur, 0, 0);
     }
     
     public void countryCreate()
@@ -50,7 +50,7 @@ public class MyWorld extends World
         Argentina arg = new Argentina();
         addObject(arg, 130, 399);
         Greenland gre = new Greenland();
-        addObject(gre, 297, 42);
+        addObject(gre, 289, 39);
         Iceland ice = new Iceland();
         addObject(ice, 345 ,72);
         UK uni = new UK();
@@ -84,9 +84,9 @@ public class MyWorld extends World
         India ind = new India();
         addObject(ind, 718, 377);
         AustraliaWest auw = new AustraliaWest();
-        addObject(auw, 800, 527);
+        addObject(auw, 807, 492);
         AustraliaEast aue = new AustraliaEast();
-        addObject(aue,854, 530);
+        addObject(aue,861, 493);
         AfricaWest afw = new AfricaWest();
         addObject(afw, 369, 358);
         AfricaSouth afs = new AfricaSouth();
@@ -95,8 +95,6 @@ public class MyWorld extends World
         addObject(afc, 434, 398);
         AfricaEast afe = new AfricaEast();
         addObject(afe, 506, 431);
-        Madagascar mad = new Madagascar();
-        addObject(mad, 532, 509);
     }
     
     public void labelCreate()
@@ -114,7 +112,7 @@ public class MyWorld extends World
         Label yukLab = new Label("5", 50);
         addObject(yukLab, 104, 53);
         Label greLab = new Label("1", 50);
-        addObject(greLab, 299, 31);
+        addObject(greLab, 290, 28);
         Label iceLab = new Label("1", 40);
         addObject(iceLab, 341, 71);
         Label fraLab = new Label("7", 50);
@@ -139,8 +137,6 @@ public class MyWorld extends World
         addObject(afcLab, 442, 396);
         Label afsLab = new Label("3", 50);
         addObject(afsLab, 418, 479);
-        Label madLab = new Label("6", 50);
-        addObject(madLab, 530, 509);
         Label ontLab = new Label("5", 50);
         addObject(ontLab, 209,78);
         Label albLab = new Label("4", 35);
@@ -168,9 +164,25 @@ public class MyWorld extends World
         Label thaLab = new Label("3", 50);
         addObject(thaLab, 848, 404);
         Label aueLab = new Label("1", 50);
-        addObject(aueLab, 848, 529);
+        addObject(aueLab, 855, 494);
         Label auwLab = new Label("1", 50);
-        addObject(auwLab, 798, 532);
+        addObject(auwLab, 810, 496);
+    }
+    
+    public void connecter()
+    {
+        connecter con1 = new connecter();
+        addObject(con1, 262, 345);
+        connecter con2 = new connecter();
+        addObject(con2, 321, 50);
+        connecter con3 = new connecter();
+        addObject(con3, 360, 102);
+        connecter con4 = new connecter();
+        addObject(con4, 442, 134);
+        connecter con5 = new connecter();
+        addObject(con5, 8, 32);
+        connecter con6 = new connecter();
+        addObject(con6, 1086, 204);
     }
     
     public void attack()

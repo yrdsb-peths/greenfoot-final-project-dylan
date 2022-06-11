@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Madagascar here.
+ * Write a description of class connecter here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Madagascar extends Country
+public class connecter extends Actor
 {
     /**
-     * Act - do whatever the Madagascar wants to do. This method is called whenever
+     * Act - do whatever the connecter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        setImage("images/Madagascar/Madagascar_Blue.png");
+        // Add your action code here.
     }
 }
