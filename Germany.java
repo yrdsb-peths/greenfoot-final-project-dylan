@@ -12,8 +12,20 @@ public class Germany extends Country
      * Act - do whatever the Germany wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act()
+    public Germany()
     {
         setImage("images/Germany/Germany_Blue.png");
+    }
+    public void act()
+    {
+        if(Greenfoot.mouseClicked(this))
+        {
+            gerClicked = 1;
+            if(fraClicked == 1)
+            {
+                MyWorld world = (MyWorld) getWorld();
+                //world.attack();
+            }
+        }
     }
 }

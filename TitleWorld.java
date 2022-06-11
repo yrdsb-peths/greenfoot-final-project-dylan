@@ -20,13 +20,15 @@ public class TitleWorld extends World
         GreenfootImage background = new GreenfootImage("images/risk.jpg");
         background.scale(1100, 600);
         setBackground(background);
-        Label instructionLabel = new Label("Press <space> to begin", 50);
-        addObject(instructionLabel, 550, 550);
+        Instructions ins = new Instructions();
+        addObject(ins, 972, 552);
+        Play pla = new Play();
+        addObject(pla, 130, 551);
     }
     public void act()
     {
         if(Greenfoot.isKeyDown("space")){
-            MyWorld world = new MyWorld();
+            MenuWorld world = new MenuWorld();
             Greenfoot.setWorld(world);
         }
     }
