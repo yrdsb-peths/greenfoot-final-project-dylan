@@ -51,6 +51,30 @@ public class Arabia extends Country
                     }
                 }
             }
+            if(stateAra != stateCea)
+            {
+                if(araClicked == 1 && ceaClicked == 1)
+                {
+                    if(stateAra == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Arabia/Arabia_Red.png");
+                            araClicked = 0;
+                            ceaClicked = 0;
+                            stateAra = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Arabia/Arabia_Blue.png");
+                            araClicked = 0;
+                            ceaClicked = 0;
+                            stateAra = 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

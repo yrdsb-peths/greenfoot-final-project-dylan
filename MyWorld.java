@@ -39,7 +39,7 @@ public class MyWorld extends World
         Sweden swe = new Sweden();
         addObject(swe, 539, 86);
         RussiaMid rum = new RussiaMid();
-        addObject(rum, 766,161);  
+        addObject(rum, 766,172);  
         RussiaWest ruw = new RussiaWest();
         addObject(ruw, 624, 190);
         China chi = new China();

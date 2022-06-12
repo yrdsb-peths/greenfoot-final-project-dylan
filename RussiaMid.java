@@ -14,6 +14,6 @@ public class RussiaMid extends Country
      */
     public void act()
     {
-        setImage("images/RussiaMid/RussiaMid_Purple.png");
+        setImage("images/RussiaMid/RussiaMid_Blue.png");
     }
 }
