@@ -25,7 +25,7 @@ public class MyWorld extends World
     public void countryCreate()
     {
         UK uni = new UK();
-        addObject(uni, 394, 135);
+        addObject(uni, 390, 115);
         France fra = new France();
         addObject(fra,420 ,194);
         Germany ger = new Germany();
@@ -54,10 +54,6 @@ public class MyWorld extends World
         addObject(tha, 849, 423);
         India ind = new India();
         addObject(ind, 718, 377);
-        AustraliaWest auw = new AustraliaWest();
-        addObject(auw, 807, 492);
-        AustraliaEast aue = new AustraliaEast();
-        addObject(aue,861, 493);
         AfricaWest afw = new AfricaWest();
         addObject(afw, 369, 358);
         AfricaSouth afs = new AfricaSouth();
@@ -70,61 +66,46 @@ public class MyWorld extends World
     
     public void labelCreate()
     {
-        Label afwLab = new Label("1", 50);
+        int size = 25;
+        int fraTroop = 0;
+        int gerTroop = 0;
+        Label afwLab = new Label("1", size);
         addObject(afwLab, 372, 343);
-        Label ruwLab = new Label("1", 50);
+        Label ruwLab = new Label("1", size);
         addObject(ruwLab, 607, 158);
-        Label spaLab = new Label("1", 50);
+        Label spaLab = new Label("1", size);
         addObject(spaLab, 397, 256);
-        Label fraLab = new Label("1", 50);
+        Label fraLab = new Label("1", size);
         addObject(fraLab, 421, 192);
-        Label gerLab = new Label("1", 50);
+        Label gerLab = new Label("1", size);
         addObject(gerLab, 485, 167);
-        Label itaLab = new Label("1", 50);
+        Label itaLab = new Label("1", size);
         addObject(itaLab, 517, 233);
-        Label sweLab = new Label("1", 50);
+        Label sweLab = new Label("1", size);
         addObject(sweLab, 531, 67);
-        Label uniLab = new Label("1", 50);
-        addObject(uniLab, 397, 141);
-        Label araLab = new Label("1", 50);
+        Label uniLab = new Label("1", size);
+        addObject(uniLab, 393, 123);
+        Label araLab = new Label("1", size);
         addObject(araLab, 578, 339);
-        Label afnLab = new Label("1", 50);
+        Label afnLab = new Label("1", size);
         addObject(afnLab, 480, 339);
-        Label indLab = new Label("1", 50);
+        Label indLab = new Label("1", size);
         addObject(indLab, 721, 375);
-        Label afeLab = new Label("1", 50);
+        Label afeLab = new Label("1", size);
         addObject(afeLab, 500, 419);
-        Label afcLab = new Label("1", 50);
+        Label afcLab = new Label("1", size);
         addObject(afcLab, 442, 396);
-        Label afsLab = new Label("1", 50);
+        Label afsLab = new Label("1", size);
         addObject(afsLab, 418, 479);
-        Label rumLab = new Label("1", 50);
+        Label rumLab = new Label("1", size);
         addObject(rumLab, 757, 155);
-        Label rueLab = new Label("1", 50);
+        Label rueLab = new Label("1", size);
         addObject(rueLab, 919, 185);
-        Label ceaLab = new Label("1", 50);
+        Label ceaLab = new Label("1", size);
         addObject(ceaLab, 715, 271);
-        Label thaLab = new Label("1", 50);
+        Label thaLab = new Label("1", size);
         addObject(thaLab, 848, 404);
-        Label aueLab = new Label("1", 50);
-        addObject(aueLab, 855, 494);
-        Label auwLab = new Label("1", 50);
-        addObject(auwLab, 810, 496);
-        Label chiLab = new Label("1", 50);
+        Label chiLab = new Label("1", size);
         addObject(chiLab, 854, 319);
-    }
-    
-    public int attack(int x, int y)
-    {
-        if(x > y)
-        {
-            x = x - (y/2);
-        }
-        if(x < y || x == y)
-        {
-            x = 1;
-            y = y - (x/2);
-        }
-        return x;
     }
 }

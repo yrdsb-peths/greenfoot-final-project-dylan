@@ -7,6 +7,4 @@ comment2.params=
 comment2.target=void\ countryCreate()
 comment3.params=
 comment3.target=void\ labelCreate()
-comment4.params=x\ y
-comment4.target=int\ attack(int,\ int)
-numComments=5
+numComments=4

@@ -14,18 +14,56 @@ public class Germany extends Country
      */
     public Germany()
     {
-        setImage("images/Germany/Germany_Blue.png");
+        stateGer = Greenfoot.getRandomNumber(2);
+        if(stateGer == 1)
+        {
+            setImage("images/Germany/Germany_Blue.png");
+        }else{
+            setImage("images/Germany/Germany_Red.png");
+        }
+        
     }
     public void act()
     {
         if(Greenfoot.mouseClicked(this))
         {
             gerClicked = 1;
-            if(fraClicked == 1)
+            if(stateGer != stateFra)
             {
-                MyWorld world = (MyWorld) getWorld();
-                //world.attack();
+                if(fraClicked == 1 && gerClicked == 1)
+                {
+                    if(stateGer == 1)
+                    {
+                        setImage("images/Germany/Germany_Red.png");
+                        gerClicked = 0;
+                        fraClicked = 0;
+                        stateGer = 0;
+                    }else{
+                        setImage("images/Germany/Germany_Blue.png");
+                        gerClicked = 0;
+                        fraClicked = 0;
+                        stateGer = 1; 
+                    }
+                }
             }
+            if(stateGer != stateIta)
+            {
+                if(gerClicked == 1 && itaClicked == 1)
+                {
+                    if(stateGer == 1)
+                    {
+                        setImage("images/Germany/Germany_Red.png");
+                        gerClicked = 0;
+                        itaClicked = 0;
+                        stateGer = 0;
+                    }else{
+                        setImage("images/Germany/Germany_Blue.png");
+                        gerClicked = 0;
+                        itaClicked = 0;
+                        stateGer = 1;
+                    }
+                }
+            }            
         }
     }
 }
