@@ -47,7 +47,7 @@ public class MyWorld extends World
         CentralAsia cea = new CentralAsia();
         addObject(cea, 703, 271);
         Arabia ara = new Arabia();
-        addObject(ara, 585, 317);
+        addObject(ara, 586, 350);
         AfricaNorth afn = new AfricaNorth();
         addObject(afn, 476, 341);
         Thailand tha = new Thailand();

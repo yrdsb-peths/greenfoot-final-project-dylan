@@ -12,8 +12,117 @@ public class AfricaNorth extends Country
      * Act - do whatever the AfricaNorth wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public AfricaNorth()
+    {
+        stateAfn = Greenfoot.getRandomNumber(2);
+        if(stateAfn == 1)
+        {
+            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+        }else{
+            setImage("images/AfricaNorth/AfricaNorth_Red.png");
+        }  
+    }
     public void act()
     {
-        setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+        if(Greenfoot.mouseClicked(this))
+        {
+            afnClicked = 1;
+            if(stateAfn != stateAfc)
+            {
+                if(afnClicked == 1 && afcClicked == 1)
+                {
+                    if(stateAfn == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                            afnClicked = 0;
+                            afcClicked = 0;
+                            stateAfn = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                            afcClicked = 0;
+                            afnClicked = 0;
+                            stateAfn = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateAfn != stateAfw)
+            {
+                if(afnClicked == 1 && afwClicked == 1)
+                {
+                    if(stateAfn == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                            afnClicked = 0;
+                            afwClicked = 0;
+                            stateAfn = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                            afwClicked = 0;
+                            afnClicked = 0;
+                            stateAfn = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateAfn != stateAfe)
+            {
+                if(afnClicked == 1 && afeClicked == 1)
+                {
+                    if(stateAfn == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                            afnClicked = 0;
+                            afeClicked = 0;
+                            stateAfn = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                            afeClicked = 0;
+                            afnClicked = 0;
+                            stateAfn = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateAfn != stateAra)
+            {
+                if(afnClicked == 1 && araClicked == 1)
+                {
+                    if(stateAfn == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                            afnClicked = 0;
+                            araClicked = 0;
+                            stateAfn = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                            araClicked = 0;
+                            afnClicked = 0;
+                            stateAfn = 1; 
+                        }
+                    }
+                }
+            }
+        }
     }
 }

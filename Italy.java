@@ -99,6 +99,30 @@ public class Italy extends Country
                     }
                 }
             }
+            if(stateIta != stateRuw)
+            {
+                if(ruwClicked == 1 && itaClicked == 1)
+                {
+                    if(stateIta == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Italy/Italy_Red.png");
+                            ruwClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Italy/Italy_Blue.png");
+                            ruwClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

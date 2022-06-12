@@ -75,6 +75,30 @@ public class RussiaWest extends Country
                     }
                 }
             }
+            if(stateRuw != stateGer)
+            {
+                if(gerClicked == 1 && ruwClicked == 1)
+                {
+                    if(stateRuw == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaWest/RussiaWest_Red.png");
+                            gerClicked = 0;
+                            ruwClicked = 0;
+                            stateRuw = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaWest/RussiaWest_Blue.png");
+                            gerClicked = 0;
+                            ruwClicked = 0;
+                            stateRuw = 1; 
+                        }
+                    }
+                }
+            }
         }
     }
 }

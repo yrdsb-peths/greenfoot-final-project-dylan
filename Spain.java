@@ -50,6 +50,30 @@ public class Spain extends Country
                         }
                     }
                 }
+            }
+            if(stateSpa != stateAfw)
+            {
+                if(afwClicked == 1 && spaClicked == 1)
+                {
+                    if(stateSpa == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Spain/Spain_Red.png");
+                            spaClicked = 0;
+                            afwClicked = 0;
+                            stateSpa = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Spain/Spain_Blue.png");
+                            spaClicked = 0;
+                            afwClicked = 0;
+                            stateSpa = 1; 
+                        }
+                    }
+                }
             }   
         }
     }
