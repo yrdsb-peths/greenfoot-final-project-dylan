@@ -75,6 +75,78 @@ public class CentralAsia extends Country
                     }
                 }
             }
+            if(stateCea != stateInd)
+            {
+                if(ceaClicked == 1 && indClicked == 1)
+                {
+                    if(stateCea == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Red.png");
+                            indClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Blue.png");
+                            indClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 1;
+                        }
+                    }
+                }
+            }
+            if(stateCea != stateRum)
+            {
+                if(rumClicked == 1 && ceaClicked == 1)
+                {
+                    if(stateCea == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Red.png");
+                            rumClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Blue.png");
+                            rumClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 1;
+                        }
+                    }
+                }
+            }
+            if(stateCea != stateChi)
+            {
+                if(chiClicked == 1 && ceaClicked == 1)
+                {
+                    if(stateCea == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Red.png");
+                            chiClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/CentralAsia/CentralAsia_Blue.png");
+                            chiClicked = 0;
+                            ceaClicked = 0;
+                            stateCea = 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -12,8 +12,117 @@ public class RussiaMid extends Country
      * Act - do whatever the RussiaMid wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public RussiaMid()
+    {
+        stateRum = Greenfoot.getRandomNumber(2);
+        if(stateRum == 1)
+        {
+            setImage("images/RussiaMid/RussiaMid_Blue.png");
+        }else{
+            setImage("images/RussiaMid/RussiaMid_Red.png");
+        }   
+    }
     public void act()
     {
-        setImage("images/RussiaMid/RussiaMid_Blue.png");
+        if(Greenfoot.mouseClicked(this))
+        {
+            rumClicked = 1;
+            if(stateRum != stateRuw)
+            {
+                if(rumClicked == 1 && ruwClicked == 1)
+                {
+                    if(stateRum == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Red.png");
+                            rumClicked = 0;
+                            ruwClicked = 0;
+                            stateRum = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Blue.png");
+                            rumClicked = 0;
+                            ruwClicked = 0;
+                            stateRum = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateRum != stateCea)
+            {
+                if(rumClicked == 1 && ceaClicked == 1)
+                {
+                    if(stateRum == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Red.png");
+                            rumClicked = 0;
+                            ceaClicked = 0;
+                            stateRum = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Blue.png");
+                            rumClicked = 0;
+                            ceaClicked = 0;
+                            stateRum = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateRum != stateRue)
+            {
+                if(rumClicked == 1 && rueClicked == 1)
+                {
+                    if(stateRum == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Red.png");
+                            rumClicked = 0;
+                            rueClicked = 0;
+                            stateRum = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Blue.png");
+                            rumClicked = 0;
+                            rueClicked = 0;
+                            stateRum = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateRum != stateChi)
+            {
+                if(rumClicked == 1 && chiClicked == 1)
+                {
+                    if(stateRum == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Red.png");
+                            rumClicked = 0;
+                            chiClicked = 0;
+                            stateRum = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaMid/RussiaMid_Blue.png");
+                            rumClicked = 0;
+                            chiClicked = 0;
+                            stateRum = 1; 
+                        }
+                    }
+                }
+            }
+        }
     }
 }

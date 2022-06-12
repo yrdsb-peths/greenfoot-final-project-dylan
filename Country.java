@@ -26,6 +26,11 @@ public class Country extends Actor
     static int afeClicked = 0;
     static int afnClicked = 0;
     static int ceaClicked = 0;
+    static int indClicked = 0;
+    static int rumClicked = 0;
+    static int rueClicked = 0;
+    static int chiClicked = 0;
+    static int thaClicked = 0;
     static int stateFra = 0;
     static int stateGer = 0;
     static int stateSpa = 0;
@@ -40,6 +45,11 @@ public class Country extends Actor
     static int stateAfe = 0;
     static int stateAfn = 0;
     static int stateCea = 0;
+    static int stateInd = 0;
+    static int stateRum = 0;
+    static int stateRue = 0;
+    static int stateChi = 0;
+    static int stateTha = 0;
     public int player = 1;
     public void act()
     {

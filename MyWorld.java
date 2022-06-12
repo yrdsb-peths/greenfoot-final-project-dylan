@@ -35,7 +35,7 @@ public class MyWorld extends World
         Italy ita = new Italy();
         addObject(ita, 500, 241);
         RussiaEast rue = new RussiaEast();
-        addObject(rue,949, 200);
+        addObject(rue,954, 185);
         Sweden swe = new Sweden();
         addObject(swe, 539, 86);
         RussiaMid rum = new RussiaMid();

@@ -12,8 +12,69 @@ public class RussiaEast extends Country
      * Act - do whatever the RussiaEast wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public RussiaEast()
+    {
+        stateRue = Greenfoot.getRandomNumber(2);
+        if(stateRue == 1)
+        {
+            setImage("images/RussiaEast/RussiaEast_Blue.png");
+        }else{
+            setImage("images/RussiaEast/RussiaEast_Red.png");
+        }   
+    }
     public void act()
     {
-        setImage("images/RussiaEast/RussiaEast_Red.png");
+        if(Greenfoot.mouseClicked(this))
+        {
+            rueClicked = 1;
+            if(stateRue != stateRum)
+            {
+                if(rumClicked == 1 && rueClicked == 1)
+                {
+                    if(stateRue == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaEast/RussiaEast_Red.png");
+                            rumClicked = 0;
+                            rueClicked = 0;
+                            stateRue = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaEast/RussiaEast_Blue.png");
+                            rumClicked = 0;
+                            rueClicked = 0;
+                            stateRue = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateRue != stateChi)
+            {
+                if(chiClicked == 1 && rueClicked == 1)
+                {
+                    if(stateRue == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/RussiaEast/RussiaEast_Red.png");
+                            chiClicked = 0;
+                            rueClicked = 0;
+                            stateRue = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/RussiaEast/RussiaEast_Blue.png");
+                            chiClicked = 0;
+                            rueClicked = 0;
+                            stateRue = 1; 
+                        }
+                    }
+                }
+            }
+        }
     }
 }
