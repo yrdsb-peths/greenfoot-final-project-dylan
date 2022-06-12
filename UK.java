@@ -12,8 +12,45 @@ public class UK extends Country
      * Act - do whatever the UK wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public UK()
+    {
+        stateUni = Greenfoot.getRandomNumber(2);
+        if(stateUni == 1)
+        {
+            setImage("images/UK/UK_Blue.png");
+        }else{
+            setImage("images/UK/UK_Red.png");
+        }   
+    }
     public void act()
     {
-        setImage("images/UK/UK_Red.png");
+        if(Greenfoot.mouseClicked(this))
+        {
+            uniClicked = 1;
+            if(stateUni != stateFra)
+            {
+                if(fraClicked == 1 && uniClicked == 1)
+                {
+                    if(stateUni == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/UK/UK_Red.png");
+                            uniClicked = 0;
+                            fraClicked = 0;
+                            stateUni = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/UK/UK_Blue.png");
+                            uniClicked = 0;
+                            fraClicked = 0;
+                            stateUni = 1; 
+                        }
+                    }
+                }
+            }   
+        }
     }
 }

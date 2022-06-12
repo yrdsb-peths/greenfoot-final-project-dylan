@@ -34,15 +34,21 @@ public class France extends Country
                 {
                     if(stateFra == 1)
                     {
-                        setImage("images/France/France_Red.png");
-                        gerClicked = 0;
-                        fraClicked = 0;
-                        stateFra = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/France/France_Red.png");
+                            gerClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 0;
+                        }
                     }else{
-                        setImage("images/France/France_Blue.png");
-                        gerClicked = 0;
-                        fraClicked = 0;
-                        stateFra = 1;
+                        if(player == 1)
+                        {
+                            setImage("images/France/France_Blue.png");
+                            gerClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 1;
+                        }
                     }
                 }
             }
@@ -52,15 +58,71 @@ public class France extends Country
                 {
                     if(stateFra == 1)
                     {
-                        setImage("images/France/France_Red.png");
-                        itaClicked = 0;
-                        fraClicked = 0;
-                        stateFra = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/France/France_Red.png");
+                            itaClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 0; 
+                        }
+
                     }else{
-                        setImage("images/France/France_Blue.png");
-                        itaClicked = 0;
-                        fraClicked = 0;
-                        stateFra = 1;
+                        if(player == 1)
+                        {
+                            setImage("images/France/France_Blue.png");
+                            itaClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 1;
+                        }
+                    }
+                }
+            }
+            if(stateFra != stateSpa)
+            {
+                if(spaClicked == 1 && fraClicked == 1)
+                {
+                    if(stateFra == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/France/France_Red.png");
+                            spaClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 0; 
+                        }
+
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/France/France_Blue.png");
+                            spaClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 1;
+                        }
+                    }
+                }
+            }
+            if(stateFra != stateUni)
+            {
+                if(uniClicked == 1 && fraClicked == 1)
+                {
+                    if(stateFra == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/France/France_Red.png");
+                            uniClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/France/France_Blue.png");
+                            uniClicked = 0;
+                            fraClicked = 0;
+                            stateFra = 1;
+                        }
                     }
                 }
             }

@@ -19,7 +19,7 @@ public class MyWorld extends World
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1);
         countryCreate();
-        labelCreate();
+        //labelCreate();
     }
     
     public void countryCreate()
@@ -35,13 +35,13 @@ public class MyWorld extends World
         Italy ita = new Italy();
         addObject(ita, 500, 241);
         RussiaEast rue = new RussiaEast();
-        addObject(rue, 603, 166);
+        addObject(rue,949, 200);
         Sweden swe = new Sweden();
         addObject(swe, 539, 86);
         RussiaMid rum = new RussiaMid();
         addObject(rum, 766,161);  
         RussiaWest ruw = new RussiaWest();
-        addObject(ruw, 949, 200);
+        addObject(ruw, 624, 190);
         China chi = new China();
         addObject(chi, 869, 301);
         CentralAsia cea = new CentralAsia();

@@ -33,15 +33,21 @@ public class Italy extends Country
                 {
                     if(stateIta == 1)
                     {
-                        setImage("images/Italy/Italy_Red.png");
-                        gerClicked = 0;
-                        itaClicked = 0;
-                        stateIta = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/Italy/Italy_Red.png");
+                            gerClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 0;
+                        }
                     }else{
-                        setImage("images/Italy/Italy_Blue.png");
-                        gerClicked = 0;
-                        itaClicked = 0;
-                        stateIta = 1;
+                        if(player == 1)
+                        {
+                            setImage("images/Italy/Italy_Blue.png");
+                            gerClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 1;
+                        }
                     }
                 }
             }
@@ -51,15 +57,45 @@ public class Italy extends Country
                 {
                     if(stateIta == 1)
                     {
-                        setImage("images/Italy/Italy_Red.png");
-                        fraClicked = 0;
-                        itaClicked = 0;
-                        stateIta = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/Italy/Italy_Red.png");
+                            fraClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 0;
+                        }
                     }else{
-                        setImage("images/Italy/Italy_Blue.png");
-                        fraClicked = 0;
-                        itaClicked = 0;
-                        stateIta = 1;
+                        if(player == 1)
+                        {
+                            setImage("images/Italy/Italy_Blue.png");
+                            fraClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 1;
+                        }
+                    }
+                }
+            }
+            if(stateIta != stateFra)
+            {
+                if(fraClicked == 1 && itaClicked == 1)
+                {
+                    if(stateIta == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Italy/Italy_Red.png");
+                            fraClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Italy/Italy_Blue.png");
+                            fraClicked = 0;
+                            itaClicked = 0;
+                            stateIta = 1;
+                        }
                     }
                 }
             }

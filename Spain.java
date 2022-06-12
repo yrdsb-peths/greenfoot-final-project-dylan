@@ -12,8 +12,45 @@ public class Spain extends Country
      * Act - do whatever the Spain wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Spain()
+    {
+        stateSpa = Greenfoot.getRandomNumber(2);
+        if(stateSpa == 1)
+        {
+            setImage("images/Spain/Spain_Blue.png");
+        }else{
+            setImage("images/Spain/Spain_Red.png");
+        }   
+    }
     public void act()
     {
-        setImage("images/Spain/Spain_Orange.png");
+        if(Greenfoot.mouseClicked(this))
+        {
+            spaClicked = 1;
+            if(stateSpa != stateFra)
+            {
+                if(fraClicked == 1 && spaClicked == 1)
+                {
+                    if(stateSpa == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Spain/Spain_Red.png");
+                            spaClicked = 0;
+                            fraClicked = 0;
+                            stateSpa = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Spain/Spain_Blue.png");
+                            spaClicked = 0;
+                            fraClicked = 0;
+                            stateSpa = 1; 
+                        }
+                    }
+                }
+            }   
+        }
     }
 }

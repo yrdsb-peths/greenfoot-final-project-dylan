@@ -34,15 +34,21 @@ public class Germany extends Country
                 {
                     if(stateGer == 1)
                     {
-                        setImage("images/Germany/Germany_Red.png");
-                        gerClicked = 0;
-                        fraClicked = 0;
-                        stateGer = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/Germany/Germany_Red.png");
+                            gerClicked = 0;
+                            fraClicked = 0;
+                            stateGer = 0;
+                        }
                     }else{
-                        setImage("images/Germany/Germany_Blue.png");
-                        gerClicked = 0;
-                        fraClicked = 0;
-                        stateGer = 1; 
+                        if(player == 1)
+                        {
+                            setImage("images/Germany/Germany_Blue.png");
+                            gerClicked = 0;
+                            fraClicked = 0;
+                            stateGer = 1; 
+                        }
                     }
                 }
             }
@@ -52,18 +58,74 @@ public class Germany extends Country
                 {
                     if(stateGer == 1)
                     {
-                        setImage("images/Germany/Germany_Red.png");
-                        gerClicked = 0;
-                        itaClicked = 0;
-                        stateGer = 0;
+                        if(player == 0)
+                        {
+                            setImage("images/Germany/Germany_Red.png");
+                            gerClicked = 0;
+                            itaClicked = 0;
+                            stateGer = 0;
+                        }
                     }else{
+                        if(player == 1)
+                        {
                         setImage("images/Germany/Germany_Blue.png");
                         gerClicked = 0;
                         itaClicked = 0;
                         stateGer = 1;
+                        }
                     }
                 }
-            }            
+            }
+            if(stateGer != stateSwe)
+            {
+                if(sweClicked == 1 && gerClicked == 1)
+                {
+                    if(stateGer == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Germany/Germany_Red.png");
+                            sweClicked = 0;
+                            gerClicked = 0;
+                            stateGer = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Germany/Germany_Blue.png");
+                            sweClicked = 0;
+                            gerClicked = 0;
+                            stateGer = 1; 
+                        }
+                    }
+                }
+            }
+            if(stateGer != stateRuw)
+            {
+                if(ruwClicked == 1 && gerClicked == 1)
+                {
+                    if(stateGer == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/Germany/Germany_Red.png");
+                            ruwClicked = 0;
+                            gerClicked = 0;
+                            stateGer = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/Germany/Germany_Blue.png");
+                            ruwClicked = 0;
+                            gerClicked = 0;
+                            stateGer = 1; 
+                        }
+                    }
+                    
+                }
+                
+            }
         }
     }
 }

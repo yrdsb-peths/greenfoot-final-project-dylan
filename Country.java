@@ -14,14 +14,22 @@ public class Country extends Actor
      */
     static int fraClicked = 0;
     static int gerClicked = 0;
+    static int itaClicked = 0;
+    static int spaClicked = 0;
+    static int uniClicked = 0;
+    static int sweClicked = 0;
+    static int ruwClicked = 0;
     static int stateFra = 0;
     static int stateGer = 0;
-    static int itaClicked = 0;
+    static int stateSpa = 0;
     static int stateIta = 0;
-    public int player = 0;
+    static int stateUni = 0;
+    static int stateSwe = 0;
+    static int stateRuw = 0;
+    public int player = 1;
     public void act()
     {
-
+        
     }
 
 }
