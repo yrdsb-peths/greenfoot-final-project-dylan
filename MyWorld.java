@@ -74,8 +74,12 @@ public class MyWorld extends World
     
     public void labelCreate()
     {
-        addObject(player1, 72, 232);
-        addObject(player2, 72, 269);
+        Label p1 = new Label("Blue:", 50);
+        Label p2 = new Label("Red:", 50);
+        addObject(player1, 130, 232);
+        addObject(player2, 121, 269);
+        addObject(p1, 50, 232);
+        addObject(p2, 45, 268);
     }
     public void increaseScoreBlue()
     {
