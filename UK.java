@@ -44,6 +44,8 @@ public class UK extends Country
                             uniClicked = 0;
                             fraClicked = 0;
                             stateUni = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

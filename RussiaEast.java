@@ -44,6 +44,8 @@ public class RussiaEast extends Country
                             rumClicked = 0;
                             rueClicked = 0;
                             stateRue = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class RussiaEast extends Country
                             chiClicked = 0;
                             rueClicked = 0;
                             stateRue = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

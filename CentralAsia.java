@@ -44,6 +44,8 @@ public class CentralAsia extends Country
                             araClicked = 0;
                             ceaClicked = 0;
                             stateCea = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class CentralAsia extends Country
                             ruwClicked = 0;
                             ceaClicked = 0;
                             stateCea = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class CentralAsia extends Country
                             indClicked = 0;
                             ceaClicked = 0;
                             stateCea = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class CentralAsia extends Country
                             rumClicked = 0;
                             ceaClicked = 0;
                             stateCea = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -148,6 +156,8 @@ public class CentralAsia extends Country
                             chiClicked = 0;
                             ceaClicked = 0;
                             stateCea = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

@@ -44,6 +44,8 @@ public class AfricaEast extends Country
                             afcClicked = 0;
                             afeClicked = 0;
                             stateAfe = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class AfricaEast extends Country
                             afsClicked = 0;
                             afeClicked = 0;
                             stateAfe = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -95,7 +99,9 @@ public class AfricaEast extends Country
                             setImage("images/AfricaEast/AfricaEast_Blue.png");
                             afnClicked = 0;
                             afeClicked = 0;
-                            stateAfe = 1; 
+                            stateAfe = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

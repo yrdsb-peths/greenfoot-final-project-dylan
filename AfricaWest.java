@@ -43,7 +43,9 @@ public class AfricaWest extends Country
                             setImage("images/AfricaWest/AfricaWest_Blue.png");
                             spaClicked = 0;
                             afwClicked = 0;
-                            stateAfw = 1; 
+                            stateAfw = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class AfricaWest extends Country
                             afsClicked = 0;
                             afwClicked = 0;
                             stateAfw = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class AfricaWest extends Country
                             afcClicked = 0;
                             afwClicked = 0;
                             stateAfw = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class AfricaWest extends Country
                             afnClicked = 0;
                             afwClicked = 0;
                             stateAfw = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

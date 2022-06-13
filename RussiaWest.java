@@ -14,7 +14,7 @@ public class RussiaWest extends Country
      */
     public RussiaWest()
     {
-        stateRuw = Greenfoot.getRandomNumber(2);
+        stateRuw = 1;
         setImage("images/RussiaWest/RussiaWest_Blue.png");
     }
     public void act()
@@ -44,6 +44,8 @@ public class RussiaWest extends Country
                             sweClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

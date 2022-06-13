@@ -44,6 +44,8 @@ public class Spain extends Country
                             spaClicked = 0;
                             fraClicked = 0;
                             stateSpa = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class Spain extends Country
                             spaClicked = 0;
                             afwClicked = 0;
                             stateSpa = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

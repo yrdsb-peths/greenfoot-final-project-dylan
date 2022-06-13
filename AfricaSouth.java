@@ -43,7 +43,10 @@ public class AfricaSouth extends Country
                             setImage("images/AfricaSouth/AfricaSouth_Blue.png");
                             afsClicked = 0;
                             afwClicked = 0;
-                            stateAfs = 1; 
+                            stateAfs = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
+                            
                         }
                     }
                 }
@@ -69,7 +72,9 @@ public class AfricaSouth extends Country
                             setImage("images/AfricaSouth/AfricaSouth_Blue.png");
                             afsClicked = 0;
                             afcClicked = 0;
-                            stateAfs = 1; 
+                            stateAfs = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +101,8 @@ public class AfricaSouth extends Country
                             afsClicked = 0;
                             afeClicked = 0;
                             stateAfs = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

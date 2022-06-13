@@ -45,6 +45,8 @@ public class France extends Country
                             gerClicked = 0;
                             fraClicked = 0;
                             stateFra = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -72,6 +74,8 @@ public class France extends Country
                             itaClicked = 0;
                             fraClicked = 0;
                             stateFra = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -99,6 +103,8 @@ public class France extends Country
                             spaClicked = 0;
                             fraClicked = 0;
                             stateFra = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -125,6 +131,8 @@ public class France extends Country
                             uniClicked = 0;
                             fraClicked = 0;
                             stateFra = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

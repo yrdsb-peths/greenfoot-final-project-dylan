@@ -28,6 +28,8 @@ public class MyWorld extends World
         Dice die = new Dice();
         addObject(die, 59, 60);
         labelCreate();
+        Indicate inc = new Indicate();
+        addObject(inc, 85, 514);
     }
     
     public void countryCreate()
@@ -76,10 +78,12 @@ public class MyWorld extends World
     {
         Label p1 = new Label("Blue:", 50);
         Label p2 = new Label("Red:", 50);
+        Label turn = new Label("Turn:", 50);
         addObject(player1, 130, 232);
         addObject(player2, 121, 269);
         addObject(p1, 50, 232);
         addObject(p2, 45, 268);
+        addObject(turn, 53, 414);
     }
     public void increaseScoreBlue()
     {

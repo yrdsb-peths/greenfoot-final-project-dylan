@@ -44,6 +44,8 @@ public class India extends Country
                             araClicked = 0;
                             indClicked = 0;
                             stateInd = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class India extends Country
                             ceaClicked = 0;
                             indClicked = 0;
                             stateInd = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class India extends Country
                             chiClicked = 0;
                             indClicked = 0;
                             stateInd = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

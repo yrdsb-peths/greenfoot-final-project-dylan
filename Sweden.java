@@ -14,7 +14,7 @@ public class Sweden extends Country
      */
     public Sweden()
     {
-        stateSwe = Greenfoot.getRandomNumber(2);
+        stateSwe = 1;
         setImage("images/Sweden/Sweden_Blue.png");
     }
     public void act()
@@ -44,6 +44,8 @@ public class Sweden extends Country
                             sweClicked = 0;
                             gerClicked = 0;
                             stateSwe = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class Sweden extends Country
                             sweClicked = 0;
                             ruwClicked = 0;
                             stateSwe = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

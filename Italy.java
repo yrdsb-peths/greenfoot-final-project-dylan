@@ -44,6 +44,8 @@ public class Italy extends Country
                             gerClicked = 0;
                             itaClicked = 0;
                             stateIta = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class Italy extends Country
                             fraClicked = 0;
                             itaClicked = 0;
                             stateIta = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class Italy extends Country
                             fraClicked = 0;
                             itaClicked = 0;
                             stateIta = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class Italy extends Country
                             ruwClicked = 0;
                             itaClicked = 0;
                             stateIta = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

@@ -43,7 +43,9 @@ public class AfricaNorth extends Country
                             setImage("images/AfricaNorth/AfricaNorth_Blue.png");
                             afcClicked = 0;
                             afnClicked = 0;
-                            stateAfn = 1; 
+                            stateAfn = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -69,7 +71,9 @@ public class AfricaNorth extends Country
                             setImage("images/AfricaNorth/AfricaNorth_Blue.png");
                             afwClicked = 0;
                             afnClicked = 0;
-                            stateAfn = 1; 
+                            stateAfn = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class AfricaNorth extends Country
                             afeClicked = 0;
                             afnClicked = 0;
                             stateAfn = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class AfricaNorth extends Country
                             araClicked = 0;
                             afnClicked = 0;
                             stateAfn = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

@@ -44,6 +44,8 @@ public class China extends Country
                             rumClicked = 0;
                             chiClicked = 0;
                             stateChi = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -70,6 +72,8 @@ public class China extends Country
                             rueClicked = 0;
                             chiClicked = 0;
                             stateChi = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class China extends Country
                             ceaClicked = 0;
                             chiClicked = 0;
                             stateChi = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class China extends Country
                             indClicked = 0;
                             chiClicked = 0;
                             stateChi = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -148,6 +156,8 @@ public class China extends Country
                             thaClicked = 0;
                             chiClicked = 0;
                             stateChi = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }

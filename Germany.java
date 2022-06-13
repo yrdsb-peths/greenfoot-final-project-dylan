@@ -44,6 +44,8 @@ public class Germany extends Country
                             gerClicked = 0;
                             fraClicked = 0;
                             stateGer = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -66,10 +68,12 @@ public class Germany extends Country
                     }else{
                         if(player == 1)
                         {
-                        setImage("images/Germany/Germany_Blue.png");
-                        gerClicked = 0;
-                        itaClicked = 0;
-                        stateGer = 1;
+                            setImage("images/Germany/Germany_Blue.png");
+                            gerClicked = 0;
+                            itaClicked = 0;
+                            stateGer = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -96,6 +100,8 @@ public class Germany extends Country
                             sweClicked = 0;
                             gerClicked = 0;
                             stateGer = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -122,6 +128,8 @@ public class Germany extends Country
                             ruwClicked = 0;
                             gerClicked = 0;
                             stateGer = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                     

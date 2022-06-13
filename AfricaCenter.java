@@ -44,6 +44,8 @@ public class AfricaCenter extends Country
                             afcClicked = 0;
                             afwClicked = 0;
                             stateAfc = 1; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -69,7 +71,9 @@ public class AfricaCenter extends Country
                             setImage("images/AfricaCenter/AfricaCenter_Blue.png");
                             afcClicked = 0;
                             afsClicked = 0;
-                            stateAfc = 1; 
+                            stateAfc = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -95,7 +99,9 @@ public class AfricaCenter extends Country
                             setImage("images/AfricaCenter/AfricaCenter_Blue.png");
                             afcClicked = 0;
                             afeClicked = 0;
-                            stateAfc = 1; 
+                            stateAfc = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
@@ -121,7 +127,9 @@ public class AfricaCenter extends Country
                             setImage("images/AfricaCenter/AfricaCenter_Blue.png");
                             afcClicked = 0;
                             afnClicked = 0;
-                            stateAfc = 1; 
+                            stateAfc = 1;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreBlue();
                         }
                     }
                 }
