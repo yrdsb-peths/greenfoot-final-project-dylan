@@ -1,19 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RandomizedDice here.
+ * Write a description of class TurnEnd here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RandomizedDice extends Actor
+public class TurnEnd extends RandomizerDice
 {
     /**
-     * Act - do whatever the RandomizedDice wants to do. This method is called whenever
+     * Act - do whatever the TurnEnd wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    static int rolled = 0;
-    static int rand = 0;
     public void act()
     {
         // Add your action code here.

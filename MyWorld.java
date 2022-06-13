@@ -16,20 +16,23 @@ public class MyWorld extends World
     public int counter = 0;
     public int blueNum = 10;
     public int redNum = 9;
+    public int once = 0;
     public Label player1 = new Label(blueNum, 50);
     public Label player2 = new Label(redNum, 50);
     public MyWorld()
     {    
-        // Create a new world with 1100x600 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1100x600 cells with a cell size of 1x1 urnpixels.
         super(1100, 600, 1);
         countryCreate();
-        RollButton roll = new RollButton();
+        RollDice roll = new RollDice();
         addObject(roll, 63, 154);
-        Dice die = new Dice();
-        addObject(die, 59, 60);
+        Die die1 = new Die();
+        addObject(die1, 59, 60);
         labelCreate();
         Indicate inc = new Indicate();
         addObject(inc, 85, 514);
+        TurnEnd ture = new TurnEnd();
+        addObject(ture, 1007, 545);
     }
     
     public void countryCreate()

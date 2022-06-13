@@ -55,5 +55,9 @@ public class Country extends Actor
     {
         
     }
+    public void player()
+    {
+        player = 1;
+    }
 
 }

@@ -1,22 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RollButton here.
+ * Write a description of class RollDice here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RollButton extends RandomizedDice
+public class RollDice extends RandomizerDice
 {
     /**
-     * Act - do whatever the RollButton wants to do. This method is called whenever
+     * Act - do whatever the RollDice wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    public RollButton()
-    {
-                
-    }
     public void act()
     {
         if(Greenfoot.mouseClicked(this))

@@ -1,21 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Dice here.
+ * Write a description of class Die here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Dice extends RandomizedDice
+public class Die extends RandomizerDice
 {
     /**
-     * Act - do whatever the Dice wants to do. This method is called whenever
+     * Act - do whatever the Die wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private GreenfootImage[] diceImages;
     private SimpleTimer timer;
     private int counter = 0;
-    public Dice()
+    public Die()
     {
         diceImages = new GreenfootImage[6];
         for(int i = 0; i < diceImages.length; i++)
