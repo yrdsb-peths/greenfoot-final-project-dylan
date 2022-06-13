@@ -34,6 +34,8 @@ public class RussiaWest extends Country
                             sweClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class RussiaWest extends Country
                             itaClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class RussiaWest extends Country
                             gerClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class RussiaWest extends Country
                             ceaClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -130,6 +138,8 @@ public class RussiaWest extends Country
                             rumClicked = 0;
                             ruwClicked = 0;
                             stateRuw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

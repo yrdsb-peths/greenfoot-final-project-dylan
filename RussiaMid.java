@@ -34,6 +34,8 @@ public class RussiaMid extends Country
                             rumClicked = 0;
                             ruwClicked = 0;
                             stateRum = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class RussiaMid extends Country
                             rumClicked = 0;
                             ceaClicked = 0;
                             stateRum = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class RussiaMid extends Country
                             rumClicked = 0;
                             rueClicked = 0;
                             stateRum = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class RussiaMid extends Country
                             rumClicked = 0;
                             chiClicked = 0;
                             stateRum = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

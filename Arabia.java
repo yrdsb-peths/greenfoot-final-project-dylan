@@ -34,6 +34,8 @@ public class Arabia extends Country
                             araClicked = 0;
                             afnClicked = 0;
                             stateAra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class Arabia extends Country
                             araClicked = 0;
                             ceaClicked = 0;
                             stateAra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class Arabia extends Country
                             araClicked = 0;
                             indClicked = 0;
                             stateAra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

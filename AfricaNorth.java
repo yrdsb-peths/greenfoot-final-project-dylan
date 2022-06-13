@@ -34,6 +34,8 @@ public class AfricaNorth extends Country
                             afnClicked = 0;
                             afcClicked = 0;
                             stateAfn = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class AfricaNorth extends Country
                             afnClicked = 0;
                             afwClicked = 0;
                             stateAfn = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class AfricaNorth extends Country
                             afnClicked = 0;
                             afeClicked = 0;
                             stateAfn = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class AfricaNorth extends Country
                             afnClicked = 0;
                             araClicked = 0;
                             stateAfn = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

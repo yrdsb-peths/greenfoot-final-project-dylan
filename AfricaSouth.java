@@ -34,6 +34,8 @@ public class AfricaSouth extends Country
                             afwClicked = 0;
                             afsClicked = 0;
                             stateAfs = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class AfricaSouth extends Country
                             afcClicked = 0;
                             afsClicked = 0;
                             stateAfs = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class AfricaSouth extends Country
                             afeClicked = 0;
                             afsClicked = 0;
                             stateAfs = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

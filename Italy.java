@@ -34,6 +34,8 @@ public class Italy extends Country
                             gerClicked = 0;
                             itaClicked = 0;
                             stateIta = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class Italy extends Country
                             fraClicked = 0;
                             itaClicked = 0;
                             stateIta = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class Italy extends Country
                             fraClicked = 0;
                             itaClicked = 0;
                             stateIta = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class Italy extends Country
                             ruwClicked = 0;
                             itaClicked = 0;
                             stateIta = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

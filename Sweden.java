@@ -34,6 +34,8 @@ public class Sweden extends Country
                             sweClicked = 0;
                             gerClicked = 0;
                             stateSwe = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class Sweden extends Country
                             sweClicked = 0;
                             ruwClicked = 0;
                             stateSwe = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

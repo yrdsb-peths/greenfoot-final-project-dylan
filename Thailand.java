@@ -34,6 +34,8 @@ public class Thailand extends Country
                             thaClicked = 0;
                             chiClicked = 0;
                             stateTha = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

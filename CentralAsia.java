@@ -34,6 +34,8 @@ public class CentralAsia extends Country
                             araClicked = 0;
                             ceaClicked = 0;
                             stateCea = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class CentralAsia extends Country
                             ruwClicked = 0;
                             ceaClicked = 0;
                             stateCea = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class CentralAsia extends Country
                             indClicked = 0;
                             ceaClicked = 0;
                             stateCea = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class CentralAsia extends Country
                             rumClicked = 0;
                             ceaClicked = 0;
                             stateCea = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -130,6 +138,8 @@ public class CentralAsia extends Country
                             chiClicked = 0;
                             ceaClicked = 0;
                             stateCea = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

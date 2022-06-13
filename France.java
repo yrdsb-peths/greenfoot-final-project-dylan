@@ -35,6 +35,8 @@ public class France extends Country
                             gerClicked = 0;
                             fraClicked = 0;
                             stateFra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,7 +60,9 @@ public class France extends Country
                             setImage("images/France/France_Red.png");
                             itaClicked = 0;
                             fraClicked = 0;
-                            stateFra = 0; 
+                            stateFra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
 
                     }else{
@@ -84,6 +88,8 @@ public class France extends Country
                             spaClicked = 0;
                             fraClicked = 0;
                             stateFra = 0; 
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
 
                     }else{
@@ -109,6 +115,8 @@ public class France extends Country
                             uniClicked = 0;
                             fraClicked = 0;
                             stateFra = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

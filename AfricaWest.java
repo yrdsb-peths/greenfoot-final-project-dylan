@@ -34,6 +34,8 @@ public class AfricaWest extends Country
                             spaClicked = 0;
                             afwClicked = 0;
                             stateAfw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class AfricaWest extends Country
                             afsClicked = 0;
                             afwClicked = 0;
                             stateAfw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class AfricaWest extends Country
                             afcClicked = 0;
                             afwClicked = 0;
                             stateAfw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -106,6 +112,8 @@ public class AfricaWest extends Country
                             afnClicked = 0;
                             afwClicked = 0;
                             stateAfw = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

@@ -34,6 +34,8 @@ public class India extends Country
                             araClicked = 0;
                             indClicked = 0;
                             stateInd = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class India extends Country
                             ceaClicked = 0;
                             indClicked = 0;
                             stateInd = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class India extends Country
                             chiClicked = 0;
                             indClicked = 0;
                             stateInd = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
