@@ -50,7 +50,7 @@ public class Country extends Actor
     static int stateRue = 0;
     static int stateChi = 0;
     static int stateTha = 0;
-    public int player = 1;
+    public int player = 0;
     public void act()
     {
         

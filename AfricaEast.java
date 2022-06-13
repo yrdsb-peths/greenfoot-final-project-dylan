@@ -34,6 +34,8 @@ public class AfricaEast extends Country
                             afeClicked = 0;
                             afcClicked = 0;
                             stateAfe = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -58,6 +60,8 @@ public class AfricaEast extends Country
                             afeClicked = 0;
                             afsClicked = 0;
                             stateAfe = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)
@@ -82,6 +86,8 @@ public class AfricaEast extends Country
                             afeClicked = 0;
                             afnClicked = 0;
                             stateAfe = 0;
+                            MyWorld world = (MyWorld) getWorld();
+                            world.increaseScoreRed();
                         }
                     }else{
                         if(player == 1)

@@ -14,6 +14,10 @@ public class MyWorld extends World
      * 
      */
     public int counter = 0;
+    public int blueNum = 10;
+    public int redNum = 9;
+    public Label player1 = new Label(blueNum, 50);
+    public Label player2 = new Label(redNum, 50);
     public MyWorld()
     {    
         // Create a new world with 1100x600 cells with a cell size of 1x1 pixels.
@@ -23,7 +27,7 @@ public class MyWorld extends World
         addObject(roll, 63, 154);
         Dice die = new Dice();
         addObject(die, 59, 60);
-        //labelCreate();
+        labelCreate();
     }
     
     public void countryCreate()
@@ -70,46 +74,21 @@ public class MyWorld extends World
     
     public void labelCreate()
     {
-        int size = 25;
-        int fraTroop = 0;
-        int gerTroop = 0;
-        Label afwLab = new Label("1", size);
-        addObject(afwLab, 372, 343);
-        Label ruwLab = new Label("1", size);
-        addObject(ruwLab, 607, 158);
-        Label spaLab = new Label("1", size);
-        addObject(spaLab, 397, 256);
-        Label fraLab = new Label("1", size);
-        addObject(fraLab, 421, 192);
-        Label gerLab = new Label("1", size);
-        addObject(gerLab, 485, 167);
-        Label itaLab = new Label("1", size);
-        addObject(itaLab, 517, 233);
-        Label sweLab = new Label("1", size);
-        addObject(sweLab, 531, 67);
-        Label uniLab = new Label("1", size);
-        addObject(uniLab, 393, 123);
-        Label araLab = new Label("1", size);
-        addObject(araLab, 578, 339);
-        Label afnLab = new Label("1", size);
-        addObject(afnLab, 480, 339);
-        Label indLab = new Label("1", size);
-        addObject(indLab, 721, 375);
-        Label afeLab = new Label("1", size);
-        addObject(afeLab, 500, 419);
-        Label afcLab = new Label("1", size);
-        addObject(afcLab, 442, 396);
-        Label afsLab = new Label("1", size);
-        addObject(afsLab, 418, 479);
-        Label rumLab = new Label("1", size);
-        addObject(rumLab, 757, 155);
-        Label rueLab = new Label("1", size);
-        addObject(rueLab, 919, 185);
-        Label ceaLab = new Label("1", size);
-        addObject(ceaLab, 715, 271);
-        Label thaLab = new Label("1", size);
-        addObject(thaLab, 848, 404);
-        Label chiLab = new Label("1", size);
-        addObject(chiLab, 854, 319);
+        addObject(player1, 72, 232);
+        addObject(player2, 72, 269);
+    }
+    public void increaseScoreBlue()
+    {
+        blueNum++;
+        redNum--;
+        player1.setValue(blueNum);
+        player2.setValue(redNum);
+    }
+    public void increaseScoreRed()
+    {
+        redNum++;
+        blueNum--;
+        player1.setValue(blueNum);
+        player2.setValue(redNum);
     }
 }
