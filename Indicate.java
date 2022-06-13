@@ -12,6 +12,11 @@ public class Indicate extends Country
      * Act - do whatever the Indicate wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Indicate()
+    {
+        setImage("images/Red.png");
+    }
+
     public void act()
     {
         if(player == 0)

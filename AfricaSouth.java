@@ -36,6 +36,7 @@ public class AfricaSouth extends Country
                             stateAfs = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -46,6 +47,7 @@ public class AfricaSouth extends Country
                             stateAfs = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                             
                         }
                     }
@@ -65,6 +67,7 @@ public class AfricaSouth extends Country
                             stateAfs = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -75,6 +78,7 @@ public class AfricaSouth extends Country
                             stateAfs = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -93,6 +97,7 @@ public class AfricaSouth extends Country
                             stateAfs = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -103,6 +108,7 @@ public class AfricaSouth extends Country
                             stateAfs = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }

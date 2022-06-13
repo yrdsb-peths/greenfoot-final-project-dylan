@@ -16,10 +16,11 @@ public class RollDice extends RandomizerDice
     {
         if(Greenfoot.mouseClicked(this))
         {
-            if(rolled == 0)
+            if(rolled == 0 && once == 0)
             {
                 rolled = 1;
                 rand = Greenfoot.getRandomNumber(18);
+                once = 1;
             }
         }
     }

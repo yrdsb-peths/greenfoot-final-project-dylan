@@ -15,7 +15,7 @@ public class TitleWorld extends World
      */
     public TitleWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1100x600 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1);
         GreenfootImage background = new GreenfootImage("images/risk.jpg");
         background.scale(1100, 600);
@@ -27,9 +27,6 @@ public class TitleWorld extends World
     }
     public void act()
     {
-        if(Greenfoot.isKeyDown("space")){
-            MenuWorld world = new MenuWorld();
-            Greenfoot.setWorld(world);
-        }
+        
     }
 }

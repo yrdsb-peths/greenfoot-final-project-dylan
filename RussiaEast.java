@@ -36,6 +36,7 @@ public class RussiaEast extends Country
                             stateRue = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -46,6 +47,7 @@ public class RussiaEast extends Country
                             stateRue = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -64,6 +66,7 @@ public class RussiaEast extends Country
                             stateRue = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -74,6 +77,7 @@ public class RussiaEast extends Country
                             stateRue = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }

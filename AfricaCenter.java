@@ -17,6 +17,7 @@ public class AfricaCenter extends Country
         stateAfc = 1;
         setImage("images/AfricaCenter/AfricaCenter_Blue.png");
     }
+
     public void act()
     {
         if(Greenfoot.mouseClicked(this))
@@ -36,6 +37,7 @@ public class AfricaCenter extends Country
                             stateAfc = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -46,6 +48,7 @@ public class AfricaCenter extends Country
                             stateAfc = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -64,6 +67,7 @@ public class AfricaCenter extends Country
                             stateAfc = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -74,6 +78,7 @@ public class AfricaCenter extends Country
                             stateAfc = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -92,6 +97,7 @@ public class AfricaCenter extends Country
                             stateAfc = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -102,6 +108,7 @@ public class AfricaCenter extends Country
                             stateAfc = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -120,6 +127,7 @@ public class AfricaCenter extends Country
                             stateAfc = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -130,6 +138,7 @@ public class AfricaCenter extends Country
                             stateAfc = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }

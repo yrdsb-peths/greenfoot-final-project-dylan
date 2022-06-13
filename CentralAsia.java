@@ -36,6 +36,7 @@ public class CentralAsia extends Country
                             stateCea = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -46,6 +47,7 @@ public class CentralAsia extends Country
                             stateCea = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -64,6 +66,7 @@ public class CentralAsia extends Country
                             stateCea = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -74,6 +77,7 @@ public class CentralAsia extends Country
                             stateCea = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -92,6 +96,7 @@ public class CentralAsia extends Country
                             stateCea = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -102,6 +107,7 @@ public class CentralAsia extends Country
                             stateCea = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -120,6 +126,7 @@ public class CentralAsia extends Country
                             stateCea = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -130,6 +137,7 @@ public class CentralAsia extends Country
                             stateCea = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -148,6 +156,7 @@ public class CentralAsia extends Country
                             stateCea = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -158,6 +167,7 @@ public class CentralAsia extends Country
                             stateCea = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }

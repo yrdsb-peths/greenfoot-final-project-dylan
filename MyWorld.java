@@ -14,15 +14,19 @@ public class MyWorld extends World
      * 
      */
     public int counter = 0;
-    public int blueNum = 10;
-    public int redNum = 9;
+    static int blueNum = 10;
+    static int redNum = 9;
     public int once = 0;
+    public int tilesTake = 0;
     public Label player1 = new Label(blueNum, 50);
     public Label player2 = new Label(redNum, 50);
+    public Label tiles = new Label(tilesTake, 50);
     public MyWorld()
     {    
         // Create a new world with 1100x600 cells with a cell size of 1x1 urnpixels.
         super(1100, 600, 1);
+        blueNum = 10;
+        redNum = 9;
         countryCreate();
         RollDice roll = new RollDice();
         addObject(roll, 63, 154);
@@ -33,8 +37,18 @@ public class MyWorld extends World
         addObject(inc, 85, 514);
         TurnEnd ture = new TurnEnd();
         addObject(ture, 1007, 545);
+        addObject(tiles, 140, 64);
     }
-    
+
+    public void act()
+    {
+        if(blueNum == 19 || redNum == 19)
+        {
+            GameOverWorld world = new GameOverWorld();
+            Greenfoot.setWorld(world);
+        }
+    }
+
     public void countryCreate()
     {
         UK uni = new UK();
@@ -76,7 +90,7 @@ public class MyWorld extends World
         AfricaEast afe = new AfricaEast();
         addObject(afe, 506, 431);
     }
-    
+
     public void labelCreate()
     {
         Label p1 = new Label("Blue:", 50);
@@ -88,6 +102,7 @@ public class MyWorld extends World
         addObject(p2, 45, 268);
         addObject(turn, 53, 414);
     }
+
     public void increaseScoreBlue()
     {
         blueNum++;
@@ -95,11 +110,40 @@ public class MyWorld extends World
         player1.setValue(blueNum);
         player2.setValue(redNum);
     }
+
     public void increaseScoreRed()
     {
         redNum++;
         blueNum--;
         player1.setValue(blueNum);
         player2.setValue(redNum);
+    }
+
+    public void setTiles(int x)
+    {
+        tilesTake = x;
+        if(x == 0)
+        {
+            tilesTake = 6;
+        }
+        tiles.setValue(tilesTake);
+    }
+
+    public void decreaseTile()
+    {
+        tilesTake--;
+        tiles.setValue(tilesTake);
+    }
+    public String giveWinner()
+    {
+        if(redNum == 19)
+        {
+            return "Red";
+        }
+        if(blueNum == 19)
+        {
+            return "Blue";
+        }
+        return null;
     }
 }

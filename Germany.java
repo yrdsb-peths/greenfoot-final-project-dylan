@@ -17,6 +17,7 @@ public class Germany extends Country
         stateGer = 1;
         setImage("images/Germany/Germany_Blue.png");
     }
+
     public void act()
     {
         if(Greenfoot.mouseClicked(this))
@@ -36,6 +37,7 @@ public class Germany extends Country
                             stateGer = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -46,6 +48,7 @@ public class Germany extends Country
                             stateGer = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -64,6 +67,7 @@ public class Germany extends Country
                             stateGer = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -74,6 +78,7 @@ public class Germany extends Country
                             stateGer = 1;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -92,6 +97,7 @@ public class Germany extends Country
                             stateGer = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -102,6 +108,7 @@ public class Germany extends Country
                             stateGer = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
                 }
@@ -120,6 +127,7 @@ public class Germany extends Country
                             stateGer = 0;
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreRed();
+                            world.decreaseTile();
                         }
                     }else{
                         if(player == 1)
@@ -130,11 +138,10 @@ public class Germany extends Country
                             stateGer = 1; 
                             MyWorld world = (MyWorld) getWorld();
                             world.increaseScoreBlue();
+                            world.decreaseTile();
                         }
                     }
-                    
                 }
-                
             }
         }
     }

@@ -25,6 +25,10 @@ public class Die extends RandomizerDice
         setImage(diceImages[0]);
         timer = new SimpleTimer();
         timer.mark();
+        once = 0;
+        rolled = 0;
+        rand = 0;
+        player = 0;
     }
     int curIndex = 0;
     void animate()
@@ -33,14 +37,16 @@ public class Die extends RandomizerDice
             setImage(diceImages[curIndex]);
             curIndex++;
             curIndex %= 6;
+            MyWorld world = (MyWorld) getWorld();
+            world.setTiles(curIndex %= 6);
             counter++;
             Greenfoot.playSound("sounds/DiceRoll.mp3");
             timer.mark();
         }
     }
+
     public void act()
     {   
-        
         if(rolled == 1)
         {
             animate();
