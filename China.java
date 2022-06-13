@@ -123,6 +123,30 @@ public class China extends Country
                     }
                 }
             }
+            if(stateChi != stateTha)
+            {
+                if(thaClicked == 1 && chiClicked == 1)
+                {
+                    if(stateChi == 1)
+                    {
+                        if(player == 0)
+                        {
+                            setImage("images/China/China_Red.png");
+                            thaClicked = 0;
+                            chiClicked = 0;
+                            stateChi = 0;
+                        }
+                    }else{
+                        if(player == 1)
+                        {
+                            setImage("images/China/China_Blue.png");
+                            thaClicked = 0;
+                            chiClicked = 0;
+                            stateChi = 1; 
+                        }
+                    }
+                }
+            }
         }
     }
 }

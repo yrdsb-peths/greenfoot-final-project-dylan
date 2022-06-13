@@ -17,7 +17,7 @@ public class MenuWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1); 
-        BackButton bac = new BackButton();
+        backButton bac = new backButton();
         addObject(bac, 1000, 546);
     }
 }

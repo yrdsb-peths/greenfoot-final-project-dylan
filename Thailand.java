@@ -26,7 +26,7 @@ public class Thailand extends Country
     {
         if(Greenfoot.mouseClicked(this))
         {
-            chiClicked = 1;
+            thaClicked = 1;
             if(stateTha != stateChi)
             {
                 if(thaClicked == 1 && chiClicked == 1)
@@ -35,7 +35,7 @@ public class Thailand extends Country
                     {
                         if(player == 0)
                         {
-                            setImage("images/China/China_Red.png");
+                            setImage("images/Thailand/Thailand_Red.png");
                             thaClicked = 0;
                             chiClicked = 0;
                             stateTha = 0;
@@ -43,7 +43,7 @@ public class Thailand extends Country
                     }else{
                         if(player == 1)
                         {
-                            setImage("images/China/China_Blue.png");
+                            setImage("images/Thailand/Thailand_Blue.png");
                             thaClicked = 0;
                             chiClicked = 0;
                             stateTha = 1; 
