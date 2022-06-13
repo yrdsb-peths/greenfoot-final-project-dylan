@@ -46,6 +46,8 @@ public class Dice extends RandomizedDice
             if(counter >= rand)
             {
                 rolled = 0;
+                rand = 0;
+                counter = 0;
             }
         }
     }
