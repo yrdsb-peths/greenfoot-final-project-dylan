@@ -25,8 +25,9 @@ public class TitleWorld extends World
         Play pla = new Play();
         addObject(pla, 130, 551);
     }
+
     public void act()
     {
-        
+
     }
 }

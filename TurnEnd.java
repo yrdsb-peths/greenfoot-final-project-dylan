@@ -28,7 +28,8 @@ public class TurnEnd extends RandomizerDice
                 rolled = 0;
                 rand = 0;
             }
-
+            MyWorld world = (MyWorld) getWorld();
+            world.setTiles(-1);
         }
     }
 }

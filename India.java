@@ -17,97 +17,101 @@ public class India extends Country
         stateInd = 2;
         setImage("images/India/India_Red.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            indClicked = 1;
-            if(stateInd != stateAra)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(indClicked == 1 && araClicked == 1)
+                indClicked = 1;
+                if(stateInd != stateAra)
                 {
-                    if(stateInd == 1)
+                    if(indClicked == 1 && araClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateInd == 1)
                         {
-                            setImage("images/India/India_Red.png");
-                            araClicked = 0;
-                            indClicked = 0;
-                            stateInd = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/India/India_Blue.png");
-                            araClicked = 0;
-                            indClicked = 0;
-                            stateInd = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/India/India_Red.png");
+                                araClicked = 0;
+                                indClicked = 0;
+                                stateInd = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/India/India_Blue.png");
+                                araClicked = 0;
+                                indClicked = 0;
+                                stateInd = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateInd != stateCea)
-            {
-                if(indClicked == 1 && ceaClicked == 1)
+                if(stateInd != stateCea)
                 {
-                    if(stateInd == 1)
+                    if(indClicked == 1 && ceaClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateInd == 1)
                         {
-                            setImage("images/India/India_Red.png");
-                            ceaClicked = 0;
-                            indClicked = 0;
-                            stateInd = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/India/India_Blue.png");
-                            ceaClicked = 0;
-                            indClicked = 0;
-                            stateInd = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/India/India_Red.png");
+                                ceaClicked = 0;
+                                indClicked = 0;
+                                stateInd = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/India/India_Blue.png");
+                                ceaClicked = 0;
+                                indClicked = 0;
+                                stateInd = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateInd != stateChi)
-            {
-                if(indClicked == 1 && chiClicked == 1)
+                if(stateInd != stateChi)
                 {
-                    if(stateInd == 1)
+                    if(indClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateInd == 1)
                         {
-                            setImage("images/India/India_Red.png");
-                            chiClicked = 0;
-                            indClicked = 0;
-                            stateInd = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/India/India_Blue.png");
-                            chiClicked = 0;
-                            indClicked = 0;
-                            stateInd = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/India/India_Red.png");
+                                chiClicked = 0;
+                                indClicked = 0;
+                                stateInd = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/India/India_Blue.png");
+                                chiClicked = 0;
+                                indClicked = 0;
+                                stateInd = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

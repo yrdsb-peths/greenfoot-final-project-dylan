@@ -17,127 +17,131 @@ public class RussiaMid extends Country
         stateRum = 1;
         setImage("images/RussiaMid/RussiaMid_Blue.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            rumClicked = 1;
-            if(stateRum != stateRuw)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(rumClicked == 1 && ruwClicked == 1)
+                rumClicked = 1;
+                if(stateRum != stateRuw)
                 {
-                    if(stateRum == 1)
+                    if(rumClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRum == 1)
                         {
-                            setImage("images/RussiaMid/RussiaMid_Red.png");
-                            rumClicked = 0;
-                            ruwClicked = 0;
-                            stateRum = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaMid/RussiaMid_Blue.png");
-                            rumClicked = 0;
-                            ruwClicked = 0;
-                            stateRum = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Red.png");
+                                rumClicked = 0;
+                                ruwClicked = 0;
+                                stateRum = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Blue.png");
+                                rumClicked = 0;
+                                ruwClicked = 0;
+                                stateRum = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRum != stateCea)
-            {
-                if(rumClicked == 1 && ceaClicked == 1)
+                if(stateRum != stateCea)
                 {
-                    if(stateRum == 1)
+                    if(rumClicked == 1 && ceaClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRum == 1)
                         {
-                            setImage("images/RussiaMid/RussiaMid_Red.png");
-                            rumClicked = 0;
-                            ceaClicked = 0;
-                            stateRum = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaMid/RussiaMid_Blue.png");
-                            rumClicked = 0;
-                            ceaClicked = 0;
-                            stateRum = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Red.png");
+                                rumClicked = 0;
+                                ceaClicked = 0;
+                                stateRum = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Blue.png");
+                                rumClicked = 0;
+                                ceaClicked = 0;
+                                stateRum = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRum != stateRue)
-            {
-                if(rumClicked == 1 && rueClicked == 1)
+                if(stateRum != stateRue)
                 {
-                    if(stateRum == 1)
+                    if(rumClicked == 1 && rueClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRum == 1)
                         {
-                            setImage("images/RussiaMid/RussiaMid_Red.png");
-                            rumClicked = 0;
-                            rueClicked = 0;
-                            stateRum = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaMid/RussiaMid_Blue.png");
-                            rumClicked = 0;
-                            rueClicked = 0;
-                            stateRum = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Red.png");
+                                rumClicked = 0;
+                                rueClicked = 0;
+                                stateRum = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Blue.png");
+                                rumClicked = 0;
+                                rueClicked = 0;
+                                stateRum = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRum != stateChi)
-            {
-                if(rumClicked == 1 && chiClicked == 1)
+                if(stateRum != stateChi)
                 {
-                    if(stateRum == 1)
+                    if(rumClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRum == 1)
                         {
-                            setImage("images/RussiaMid/RussiaMid_Red.png");
-                            rumClicked = 0;
-                            chiClicked = 0;
-                            stateRum = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaMid/RussiaMid_Blue.png");
-                            rumClicked = 0;
-                            chiClicked = 0;
-                            stateRum = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Red.png");
+                                rumClicked = 0;
+                                chiClicked = 0;
+                                stateRum = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaMid/RussiaMid_Blue.png");
+                                rumClicked = 0;
+                                chiClicked = 0;
+                                stateRum = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

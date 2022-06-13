@@ -17,127 +17,131 @@ public class AfricaNorth extends Country
         stateAfn = 1;
         setImage("images/AfricaNorth/AfricaNorth_Blue.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            afnClicked = 1;
-            if(stateAfn != stateAfc)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(afnClicked == 1 && afcClicked == 1)
+                afnClicked = 1;
+                if(stateAfn != stateAfc)
                 {
-                    if(stateAfn == 1)
+                    if(afnClicked == 1 && afcClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfn == 1)
                         {
-                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
-                            afnClicked = 0;
-                            afcClicked = 0;
-                            stateAfn = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
-                            afcClicked = 0;
-                            afnClicked = 0;
-                            stateAfn = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                                afnClicked = 0;
+                                afcClicked = 0;
+                                stateAfn = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                                afcClicked = 0;
+                                afnClicked = 0;
+                                stateAfn = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfn != stateAfw)
-            {
-                if(afnClicked == 1 && afwClicked == 1)
+                if(stateAfn != stateAfw)
                 {
-                    if(stateAfn == 1)
+                    if(afnClicked == 1 && afwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfn == 1)
                         {
-                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
-                            afnClicked = 0;
-                            afwClicked = 0;
-                            stateAfn = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
-                            afwClicked = 0;
-                            afnClicked = 0;
-                            stateAfn = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                                afnClicked = 0;
+                                afwClicked = 0;
+                                stateAfn = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                                afwClicked = 0;
+                                afnClicked = 0;
+                                stateAfn = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfn != stateAfe)
-            {
-                if(afnClicked == 1 && afeClicked == 1)
+                if(stateAfn != stateAfe)
                 {
-                    if(stateAfn == 1)
+                    if(afnClicked == 1 && afeClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfn == 1)
                         {
-                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
-                            afnClicked = 0;
-                            afeClicked = 0;
-                            stateAfn = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
-                            afeClicked = 0;
-                            afnClicked = 0;
-                            stateAfn = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                                afnClicked = 0;
+                                afeClicked = 0;
+                                stateAfn = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                                afeClicked = 0;
+                                afnClicked = 0;
+                                stateAfn = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfn != stateAra)
-            {
-                if(afnClicked == 1 && araClicked == 1)
+                if(stateAfn != stateAra)
                 {
-                    if(stateAfn == 1)
+                    if(afnClicked == 1 && araClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfn == 1)
                         {
-                            setImage("images/AfricaNorth/AfricaNorth_Red.png");
-                            afnClicked = 0;
-                            araClicked = 0;
-                            stateAfn = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaNorth/AfricaNorth_Blue.png");
-                            araClicked = 0;
-                            afnClicked = 0;
-                            stateAfn = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Red.png");
+                                afnClicked = 0;
+                                araClicked = 0;
+                                stateAfn = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaNorth/AfricaNorth_Blue.png");
+                                araClicked = 0;
+                                afnClicked = 0;
+                                stateAfn = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

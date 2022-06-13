@@ -17,67 +17,71 @@ public class Spain extends Country
         stateSpa = 2;
         setImage("images/Spain/Spain_Red.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            spaClicked = 1;
-            if(stateSpa != stateFra)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(fraClicked == 1 && spaClicked == 1)
+                spaClicked = 1;
+                if(stateSpa != stateFra)
                 {
-                    if(stateSpa == 1)
+                    if(fraClicked == 1 && spaClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateSpa == 1)
                         {
-                            setImage("images/Spain/Spain_Red.png");
-                            spaClicked = 0;
-                            fraClicked = 0;
-                            stateSpa = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/Spain/Spain_Blue.png");
-                            spaClicked = 0;
-                            fraClicked = 0;
-                            stateSpa = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/Spain/Spain_Red.png");
+                                spaClicked = 0;
+                                fraClicked = 0;
+                                stateSpa = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/Spain/Spain_Blue.png");
+                                spaClicked = 0;
+                                fraClicked = 0;
+                                stateSpa = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateSpa != stateAfw)
-            {
-                if(afwClicked == 1 && spaClicked == 1)
+                if(stateSpa != stateAfw)
                 {
-                    if(stateSpa == 1)
+                    if(afwClicked == 1 && spaClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateSpa == 1)
                         {
-                            setImage("images/Spain/Spain_Red.png");
-                            spaClicked = 0;
-                            afwClicked = 0;
-                            stateSpa = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/Spain/Spain_Blue.png");
-                            spaClicked = 0;
-                            afwClicked = 0;
-                            stateSpa = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/Spain/Spain_Red.png");
+                                spaClicked = 0;
+                                afwClicked = 0;
+                                stateSpa = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/Spain/Spain_Blue.png");
+                                spaClicked = 0;
+                                afwClicked = 0;
+                                stateSpa = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

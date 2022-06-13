@@ -32,6 +32,7 @@ public class GameOverWorld extends World
         Winner win = new Winner();
         addObject(win, getWidth()/2, 362);
     }
+
     public String getWinner()
     {
         if(MyWorld.redNum == 19)

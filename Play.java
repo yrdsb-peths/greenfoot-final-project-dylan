@@ -27,5 +27,8 @@ public class Play extends Actor
         {
             setImage("images/Play.png");
         }
+        MyWorld.redNum = 9;
+        MyWorld.blueNum = 10;
+        MyWorld.tilesTake = 0;
     }
 }

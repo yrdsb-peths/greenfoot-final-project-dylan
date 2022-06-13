@@ -17,157 +17,161 @@ public class China extends Country
         stateChi = 2;
         setImage("images/China/China_Red.png"); 
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            chiClicked = 1;
-            if(stateChi != stateRum)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(rumClicked == 1 && chiClicked == 1)
+                chiClicked = 1;
+                if(stateChi != stateRum)
                 {
-                    if(stateChi == 1)
+                    if(rumClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateChi == 1)
                         {
-                            setImage("images/China/China_Red.png");
-                            rumClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/China/China_Blue.png");
-                            rumClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/China/China_Red.png");
+                                rumClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/China/China_Blue.png");
+                                rumClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateChi != stateRue)
-            {
-                if(rueClicked == 1 && chiClicked == 1)
+                if(stateChi != stateRue)
                 {
-                    if(stateChi == 1)
+                    if(rueClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateChi == 1)
                         {
-                            setImage("images/China/China_Red.png");
-                            rueClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/China/China_Blue.png");
-                            rueClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/China/China_Red.png");
+                                rueClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/China/China_Blue.png");
+                                rueClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateChi != stateCea)
-            {
-                if(ceaClicked == 1 && chiClicked == 1)
+                if(stateChi != stateCea)
                 {
-                    if(stateChi == 1)
+                    if(ceaClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateChi == 1)
                         {
-                            setImage("images/China/China_Red.png");
-                            ceaClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/China/China_Blue.png");
-                            ceaClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/China/China_Red.png");
+                                ceaClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/China/China_Blue.png");
+                                ceaClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateChi != stateInd)
-            {
-                if(indClicked == 1 && chiClicked == 1)
+                if(stateChi != stateInd)
                 {
-                    if(stateChi == 1)
+                    if(indClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateChi == 1)
                         {
-                            setImage("images/China/China_Red.png");
-                            indClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/China/China_Blue.png");
-                            indClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/China/China_Red.png");
+                                indClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/China/China_Blue.png");
+                                indClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateChi != stateTha)
-            {
-                if(thaClicked == 1 && chiClicked == 1)
+                if(stateChi != stateTha)
                 {
-                    if(stateChi == 1)
+                    if(thaClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateChi == 1)
                         {
-                            setImage("images/China/China_Red.png");
-                            thaClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/China/China_Blue.png");
-                            thaClicked = 0;
-                            chiClicked = 0;
-                            stateChi = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/China/China_Red.png");
+                                thaClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/China/China_Blue.png");
+                                thaClicked = 0;
+                                chiClicked = 0;
+                                stateChi = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

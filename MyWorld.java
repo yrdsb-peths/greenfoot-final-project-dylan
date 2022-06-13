@@ -17,7 +17,7 @@ public class MyWorld extends World
     static int blueNum = 10;
     static int redNum = 9;
     public int once = 0;
-    public int tilesTake = 0;
+    static int tilesTake = 0;
     public Label player1 = new Label(blueNum, 50);
     public Label player2 = new Label(redNum, 50);
     public Label tiles = new Label(tilesTake, 50);
@@ -25,8 +25,6 @@ public class MyWorld extends World
     {    
         // Create a new world with 1100x600 cells with a cell size of 1x1 urnpixels.
         super(1100, 600, 1);
-        blueNum = 10;
-        redNum = 9;
         countryCreate();
         RollDice roll = new RollDice();
         addObject(roll, 63, 154);
@@ -38,6 +36,8 @@ public class MyWorld extends World
         TurnEnd ture = new TurnEnd();
         addObject(ture, 1007, 545);
         addObject(tiles, 140, 64);
+        blueNum = 10;
+        redNum = 9;
     }
 
     public void act()
@@ -126,6 +126,10 @@ public class MyWorld extends World
         {
             tilesTake = 6;
         }
+        if(x == -1)
+        {
+            tilesTake = 0;
+        }
         tiles.setValue(tilesTake);
     }
 
@@ -134,6 +138,7 @@ public class MyWorld extends World
         tilesTake--;
         tiles.setValue(tilesTake);
     }
+
     public String giveWinner()
     {
         if(redNum == 19)

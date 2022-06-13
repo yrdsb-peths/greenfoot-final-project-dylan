@@ -17,157 +17,161 @@ public class RussiaWest extends Country
         stateRuw = 1;
         setImage("images/RussiaWest/RussiaWest_Blue.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            ruwClicked = 1;
-            if(stateRuw != stateSwe)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(sweClicked == 1 && ruwClicked == 1)
+                ruwClicked = 1;
+                if(stateRuw != stateSwe)
                 {
-                    if(stateRuw == 1)
+                    if(sweClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRuw == 1)
                         {
-                            setImage("images/RussiaWest/RussiaWest_Red.png");
-                            sweClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaWest/RussiaWest_Blue.png");
-                            sweClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Red.png");
+                                sweClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Blue.png");
+                                sweClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRuw != stateIta)
-            {
-                if(itaClicked == 1 && ruwClicked == 1)
+                if(stateRuw != stateIta)
                 {
-                    if(stateRuw == 1)
+                    if(itaClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRuw == 1)
                         {
-                            setImage("images/RussiaWest/RussiaWest_Red.png");
-                            itaClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaWest/RussiaWest_Blue.png");
-                            itaClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Red.png");
+                                itaClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Blue.png");
+                                itaClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRuw != stateGer)
-            {
-                if(gerClicked == 1 && ruwClicked == 1)
+                if(stateRuw != stateGer)
                 {
-                    if(stateRuw == 1)
+                    if(gerClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRuw == 1)
                         {
-                            setImage("images/RussiaWest/RussiaWest_Red.png");
-                            gerClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaWest/RussiaWest_Blue.png");
-                            gerClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Red.png");
+                                gerClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Blue.png");
+                                gerClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRuw != stateCea)
-            {
-                if(ceaClicked == 1 && ruwClicked == 1)
+                if(stateRuw != stateCea)
                 {
-                    if(stateRuw == 1)
+                    if(ceaClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRuw == 1)
                         {
-                            setImage("images/RussiaWest/RussiaWest_Red.png");
-                            ceaClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaWest/RussiaWest_Blue.png");
-                            ceaClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Red.png");
+                                ceaClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Blue.png");
+                                ceaClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateRuw != stateRum)
-            {
-                if(rumClicked == 1 && ruwClicked == 1)
+                if(stateRuw != stateRum)
                 {
-                    if(stateRuw == 1)
+                    if(rumClicked == 1 && ruwClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateRuw == 1)
                         {
-                            setImage("images/RussiaWest/RussiaWest_Red.png");
-                            rumClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/RussiaWest/RussiaWest_Blue.png");
-                            rumClicked = 0;
-                            ruwClicked = 0;
-                            stateRuw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Red.png");
+                                rumClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/RussiaWest/RussiaWest_Blue.png");
+                                rumClicked = 0;
+                                ruwClicked = 0;
+                                stateRuw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

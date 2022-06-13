@@ -17,127 +17,131 @@ public class AfricaWest extends Country
         stateAfw = 2;
         setImage("images/AfricaWest/AfricaWest_Red.png");
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            afwClicked = 1;
-            if(stateAfw != stateSpa)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(afwClicked == 1 && spaClicked == 1)
+                afwClicked = 1;
+                if(stateAfw != stateSpa)
                 {
-                    if(stateAfw == 1)
+                    if(afwClicked == 1 && spaClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfw == 1)
                         {
-                            setImage("images/AfricaWest/AfricaWest_Red.png");
-                            spaClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaWest/AfricaWest_Blue.png");
-                            spaClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 1;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Red.png");
+                                spaClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Blue.png");
+                                spaClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 1;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfw != stateAfs)
-            {
-                if(afwClicked == 1 && afsClicked == 1)
+                if(stateAfw != stateAfs)
                 {
-                    if(stateAfw == 1)
+                    if(afwClicked == 1 && afsClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfw == 1)
                         {
-                            setImage("images/AfricaWest/AfricaWest_Red.png");
-                            afsClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaWest/AfricaWest_Blue.png");
-                            afsClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Red.png");
+                                afsClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Blue.png");
+                                afsClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfw != stateAfc)
-            {
-                if(afwClicked == 1 && afcClicked == 1)
+                if(stateAfw != stateAfc)
                 {
-                    if(stateAfw == 1)
+                    if(afwClicked == 1 && afcClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfw == 1)
                         {
-                            setImage("images/AfricaWest/AfricaWest_Red.png");
-                            afcClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaWest/AfricaWest_Blue.png");
-                            afcClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Red.png");
+                                afcClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Blue.png");
+                                afcClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
-            }
-            if(stateAfw != stateAfn)
-            {
-                if(afwClicked == 1 && afnClicked == 1)
+                if(stateAfw != stateAfn)
                 {
-                    if(stateAfw == 1)
+                    if(afwClicked == 1 && afnClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateAfw == 1)
                         {
-                            setImage("images/AfricaWest/AfricaWest_Red.png");
-                            afnClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/AfricaWest/AfricaWest_Blue.png");
-                            afnClicked = 0;
-                            afwClicked = 0;
-                            stateAfw = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Red.png");
+                                afnClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/AfricaWest/AfricaWest_Blue.png");
+                                afnClicked = 0;
+                                afwClicked = 0;
+                                stateAfw = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }

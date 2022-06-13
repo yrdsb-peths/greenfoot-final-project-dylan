@@ -17,37 +17,41 @@ public class Thailand extends Country
         stateTha = 1;
         setImage("images/Thailand/Thailand_Blue.png");  
     }
+
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
+        if(MyWorld.tilesTake > 0)
         {
-            thaClicked = 1;
-            if(stateTha != stateChi)
+            if(Greenfoot.mouseClicked(this))
             {
-                if(thaClicked == 1 && chiClicked == 1)
+                thaClicked = 1;
+                if(stateTha != stateChi)
                 {
-                    if(stateTha == 1)
+                    if(thaClicked == 1 && chiClicked == 1)
                     {
-                        if(player == 0)
+                        if(stateTha == 1)
                         {
-                            setImage("images/Thailand/Thailand_Red.png");
-                            thaClicked = 0;
-                            chiClicked = 0;
-                            stateTha = 0;
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreRed();
-                            world.decreaseTile();
-                        }
-                    }else{
-                        if(player == 1)
-                        {
-                            setImage("images/Thailand/Thailand_Blue.png");
-                            thaClicked = 0;
-                            chiClicked = 0;
-                            stateTha = 1; 
-                            MyWorld world = (MyWorld) getWorld();
-                            world.increaseScoreBlue();
-                            world.decreaseTile();
+                            if(player == 0)
+                            {
+                                setImage("images/Thailand/Thailand_Red.png");
+                                thaClicked = 0;
+                                chiClicked = 0;
+                                stateTha = 0;
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreRed();
+                                world.decreaseTile();
+                            }
+                        }else{
+                            if(player == 1)
+                            {
+                                setImage("images/Thailand/Thailand_Blue.png");
+                                thaClicked = 0;
+                                chiClicked = 0;
+                                stateTha = 1; 
+                                MyWorld world = (MyWorld) getWorld();
+                                world.increaseScoreBlue();
+                                world.decreaseTile();
+                            }
                         }
                     }
                 }
