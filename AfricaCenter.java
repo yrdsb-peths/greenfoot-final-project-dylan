@@ -14,13 +14,8 @@ public class AfricaCenter extends Country
      */
     public AfricaCenter()
     {
-        stateAfc = Greenfoot.getRandomNumber(2);
-        if(stateAfc == 1)
-        {
-            setImage("images/AfricaCenter/AfricaCenter_Blue.png");
-        }else{
-            setImage("images/AfricaCenter/AfricaCenter_Red.png");
-        }  
+        stateAfc = 1;
+        setImage("images/AfricaCenter/AfricaCenter_Blue.png");
     }
     public void act()
     {

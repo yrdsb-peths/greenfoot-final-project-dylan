@@ -15,12 +15,7 @@ public class UK extends Country
     public UK()
     {
         stateUni = Greenfoot.getRandomNumber(2);
-        if(stateUni == 1)
-        {
-            setImage("images/UK/UK_Blue.png");
-        }else{
-            setImage("images/UK/UK_Red.png");
-        }   
+        setImage("images/UK/UK_Red.png");  
     }
     public void act()
     {

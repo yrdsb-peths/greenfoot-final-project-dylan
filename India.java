@@ -14,13 +14,8 @@ public class India extends Country
      */
     public India()
     {
-        stateInd = Greenfoot.getRandomNumber(2);
-        if(stateInd == 1)
-        {
-            setImage("images/India/India_Blue.png");
-        }else{
-            setImage("images/India/India_Red.png");
-        }   
+        stateInd = 2;
+        setImage("images/India/India_Red.png");
     }
     public void act()
     {

@@ -14,13 +14,8 @@ public class RussiaEast extends Country
      */
     public RussiaEast()
     {
-        stateRue = Greenfoot.getRandomNumber(2);
-        if(stateRue == 1)
-        {
-            setImage("images/RussiaEast/RussiaEast_Blue.png");
-        }else{
-            setImage("images/RussiaEast/RussiaEast_Red.png");
-        }   
+        stateRue = 2;
+        setImage("images/RussiaEast/RussiaEast_Red.png");
     }
     public void act()
     {

@@ -14,13 +14,8 @@ public class Italy extends Country
      */
     public Italy()
     {
-        stateIta = Greenfoot.getRandomNumber(2);
-        if(stateIta == 1)
-        {
-            setImage("images/Italy/Italy_Blue.png");
-        }else{
-            setImage("images/Italy/Italy_Red.png");
-        }
+        stateIta = 2;
+        setImage("images/Italy/Italy_Red.png");
     }
     public void act()
     {

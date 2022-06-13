@@ -14,13 +14,8 @@ public class Arabia extends Country
      */
     public Arabia()
     {
-        stateAra = Greenfoot.getRandomNumber(2);
-        if(stateAra == 1)
-        {
-            setImage("images/Arabia/Arabia_Blue.png");
-        }else{
-            setImage("images/Arabia/Arabia_Red.png");
-        }   
+        stateAra = 2;
+        setImage("images/Arabia/Arabia_Red.png");
     }
     public void act()
     {

@@ -15,13 +15,8 @@ public class France extends Country
     
     public France()
     {
-        stateFra = Greenfoot.getRandomNumber(2);
-        if(stateFra == 1)
-        {
-            setImage("images/France/France_Blue.png");
-        }else{
-            setImage("images/France/France_Red.png");
-        }
+        stateFra = 1;
+        setImage("images/France/France_Blue.png");
     }
     public void act()
     {

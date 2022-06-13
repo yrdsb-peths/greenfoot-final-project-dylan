@@ -14,13 +14,8 @@ public class Thailand extends Country
      */
     public Thailand()
     {
-        stateTha = Greenfoot.getRandomNumber(2);
-        if(stateTha == 1)
-        {
-            setImage("images/Thailand/Thailand_Blue.png");
-        }else{
-            setImage("images/Thailand/Thailand_Red.png");
-        }   
+        stateTha = 1;
+        setImage("images/Thailand/Thailand_Blue.png");  
     }
     public void act()
     {

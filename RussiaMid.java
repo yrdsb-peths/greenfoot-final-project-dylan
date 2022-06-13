@@ -14,13 +14,8 @@ public class RussiaMid extends Country
      */
     public RussiaMid()
     {
-        stateRum = Greenfoot.getRandomNumber(2);
-        if(stateRum == 1)
-        {
-            setImage("images/RussiaMid/RussiaMid_Blue.png");
-        }else{
-            setImage("images/RussiaMid/RussiaMid_Red.png");
-        }   
+        stateRum = 1;
+        setImage("images/RussiaMid/RussiaMid_Blue.png");
     }
     public void act()
     {

@@ -15,12 +15,7 @@ public class Sweden extends Country
     public Sweden()
     {
         stateSwe = Greenfoot.getRandomNumber(2);
-        if(stateSwe == 1)
-        {
-            setImage("images/Sweden/Sweden_Blue.png");
-        }else{
-            setImage("images/Sweden/Sweden_Red.png");
-        }   
+        setImage("images/Sweden/Sweden_Blue.png");
     }
     public void act()
     {

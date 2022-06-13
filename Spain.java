@@ -14,13 +14,8 @@ public class Spain extends Country
      */
     public Spain()
     {
-        stateSpa = Greenfoot.getRandomNumber(2);
-        if(stateSpa == 1)
-        {
-            setImage("images/Spain/Spain_Blue.png");
-        }else{
-            setImage("images/Spain/Spain_Red.png");
-        }   
+        stateSpa = 2;
+        setImage("images/Spain/Spain_Red.png");
     }
     public void act()
     {

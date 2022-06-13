@@ -15,12 +15,7 @@ public class RussiaWest extends Country
     public RussiaWest()
     {
         stateRuw = Greenfoot.getRandomNumber(2);
-        if(stateRuw == 1)
-        {
-            setImage("images/RussiaWest/RussiaWest_Blue.png");
-        }else{
-            setImage("images/RussiaWest/RussiaWest_Red.png");
-        }  
+        setImage("images/RussiaWest/RussiaWest_Blue.png");
     }
     public void act()
     {

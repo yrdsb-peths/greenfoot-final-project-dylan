@@ -14,13 +14,8 @@ public class China extends Country
      */
     public China()
     {
-        stateChi = Greenfoot.getRandomNumber(2);
-        if(stateChi == 1)
-        {
-            setImage("images/China/China_Blue.png");
-        }else{
-            setImage("images/China/China_Red.png");
-        }   
+        stateChi = 2;
+        setImage("images/China/China_Red.png"); 
     }
     public void act()
     {

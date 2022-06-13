@@ -14,13 +14,8 @@ public class AfricaSouth extends Country
      */
     public AfricaSouth()
     {
-        stateAfs = Greenfoot.getRandomNumber(2);
-        if(stateAfs == 1)
-        {
-            setImage("images/AfricaSouth/AfricaSouth_Blue.png");
-        }else{
-            setImage("images/AfricaSouth/AfricaSouth_Red.png");
-        }  
+        stateAfs = 1;
+        setImage("images/AfricaSouth/AfricaSouth_Blue.png");
     }
     public void act()
     {

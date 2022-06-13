@@ -14,13 +14,8 @@ public class AfricaWest extends Country
      */
     public AfricaWest()
     {
-        stateAfw = Greenfoot.getRandomNumber(2);
-        if(stateAfw == 1)
-        {
-            setImage("images/AfricaWest/AfricaWest_Blue.png");
-        }else{
-            setImage("images/AfricaWest/AfricaWest_Red.png");
-        }  
+        stateAfw = 2;
+        setImage("images/AfricaWest/AfricaWest_Red.png");
     }
     public void act()
     {

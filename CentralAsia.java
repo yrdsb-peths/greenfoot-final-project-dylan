@@ -14,13 +14,8 @@ public class CentralAsia extends Country
      */
     public CentralAsia()
     {
-        stateCea = Greenfoot.getRandomNumber(2);
-        if(stateCea == 1)
-        {
-            setImage("images/CentralAsia/CentralAsia_Blue.png");
-        }else{
-            setImage("images/CentralAsia/CentralAsia_Red.png");
-        }   
+        stateCea = 1;
+        setImage("images/CentralAsia/CentralAsia_Blue.png");
     }
     public void act()
     {

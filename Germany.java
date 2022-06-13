@@ -14,14 +14,8 @@ public class Germany extends Country
      */
     public Germany()
     {
-        stateGer = Greenfoot.getRandomNumber(2);
-        if(stateGer == 1)
-        {
-            setImage("images/Germany/Germany_Blue.png");
-        }else{
-            setImage("images/Germany/Germany_Red.png");
-        }
-        
+        stateGer = 1;
+        setImage("images/Germany/Germany_Blue.png");
     }
     public void act()
     {
