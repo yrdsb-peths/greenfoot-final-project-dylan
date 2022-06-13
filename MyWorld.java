@@ -16,9 +16,13 @@ public class MyWorld extends World
     public int counter = 0;
     public MyWorld()
     {    
-        // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1100x600 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1);
         countryCreate();
+        RollButton roll = new RollButton();
+        addObject(roll, 63, 154);
+        Dice die = new Dice();
+        addObject(die, 59, 60);
         //labelCreate();
     }
     
