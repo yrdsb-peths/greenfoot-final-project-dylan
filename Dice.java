@@ -34,6 +34,7 @@ public class Dice extends RandomizedDice
             curIndex++;
             curIndex %= 6;
             counter++;
+            Greenfoot.playSound("sounds/DiceRoll.mp3");
             timer.mark();
         }
     }
