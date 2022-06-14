@@ -29,14 +29,14 @@ public class MyWorld extends World
         super(1100, 600, 1);
         countryCreate();
         RollDice roll = new RollDice();
-        addObject(roll, 63, 154);
+        addObject(roll, 71, 162);
         Die die1 = new Die();
-        addObject(die1, 59, 60);
+        addObject(die1, 69, 59);
         labelCreate();
         Indicate inc = new Indicate();
         addObject(inc, 85, 514);
         TurnEnd ture = new TurnEnd();
-        addObject(ture, 1007, 545);
+        addObject(ture, 998, 539);
         addObject(tiles, 140, 64);
         blueNum = 10;
         redNum = 9;

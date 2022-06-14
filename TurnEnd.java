@@ -28,5 +28,13 @@ public class TurnEnd extends RandomizerDice
             MyWorld world = (MyWorld) getWorld();
             world.setTiles(-1);
         }
+        if(Greenfoot.mouseMoved(this))
+        {
+            setImage("images/TurnEnd1.png");
+        }
+        if(Greenfoot.mouseMoved(getWorld()))
+        {
+            setImage("images/TurnEnd.png");
+        }
     }
 }

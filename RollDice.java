@@ -20,5 +20,13 @@ public class RollDice extends RandomizerDice
                 once = 1;
             }
         }
+        if(Greenfoot.mouseMoved(this))
+        {
+            setImage("images/Roll1.png");
+        }
+        if(Greenfoot.mouseMoved(getWorld()))
+        {
+            setImage("images/Roll.png");
+        }
     }
 }
