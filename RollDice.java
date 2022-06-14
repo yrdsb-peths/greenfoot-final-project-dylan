@@ -1,17 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RollDice here.
+ * Rolls the dice when clicked
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class RollDice extends RandomizerDice
 {
-    /**
-     * Act - do whatever the RollDice wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //When clicked roll the dice a random number
     public void act()
     {
         if(Greenfoot.mouseClicked(this))

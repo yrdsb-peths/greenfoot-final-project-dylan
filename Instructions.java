@@ -1,17 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Instructions here.
+ * Creates button to read instructions
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta 
+ * @version June, 2022
  */
 public class Instructions extends Actor
 {
-    /**
-     * Act - do whatever the Instructions wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //When clicked show instructions
     public void act()
     {
         if(Greenfoot.mouseClicked(this))

@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RussiaEast here.
+ * Create tile for RussiaEast and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class RussiaEast extends Country
 {
-    /**
-     * Act - do whatever the RussiaEast wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public RussiaEast()
     {
         stateRue = 2;
         setImage("images/RussiaEast/RussiaEast_Red.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class RussiaEast extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 rueClicked = 1;
+                //Check for RussiaMid
                 if(stateRue != stateRum)
                 {
                     if(rumClicked == 1 && rueClicked == 1)
@@ -55,6 +53,7 @@ public class RussiaEast extends Country
                         }
                     }
                 }
+                //Check for China
                 if(stateRue != stateChi)
                 {
                     if(chiClicked == 1 && rueClicked == 1)

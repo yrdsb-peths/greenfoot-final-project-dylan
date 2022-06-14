@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class India here.
+ * Create tile for India and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class India extends Country
 {
-    /**
-     * Act - do whatever the India wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Sets object to red player
     public India()
     {
         stateInd = 2;
         setImage("images/India/India_Red.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class India extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 indClicked = 1;
+                //Check for Arabia
                 if(stateInd != stateAra)
                 {
                     if(indClicked == 1 && araClicked == 1)
@@ -55,6 +53,7 @@ public class India extends Country
                         }
                     }
                 }
+                //Check for CentralAsia
                 if(stateInd != stateCea)
                 {
                     if(indClicked == 1 && ceaClicked == 1)
@@ -85,6 +84,7 @@ public class India extends Country
                         }
                     }
                 }
+                //Check for China
                 if(stateInd != stateChi)
                 {
                     if(indClicked == 1 && chiClicked == 1)

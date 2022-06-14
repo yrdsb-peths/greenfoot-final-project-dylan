@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Main world that has the game
+ * Creates the buttons and tiles for each country and methods to interact with
+ * other classes
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class MyWorld extends World
 {
@@ -39,7 +41,8 @@ public class MyWorld extends World
         blueNum = 10;
         redNum = 9;
     }
-
+    
+    //Checks if a player has won
     public void act()
     {
         if(blueNum == 19 || redNum == 19)
@@ -48,7 +51,8 @@ public class MyWorld extends World
             Greenfoot.setWorld(world);
         }
     }
-
+    
+    //Creates all the country objects
     public void countryCreate()
     {
         UK uni = new UK();
@@ -90,7 +94,8 @@ public class MyWorld extends World
         AfricaEast afe = new AfricaEast();
         addObject(afe, 506, 431);
     }
-
+    
+    //Creates labels and adds them to world
     public void labelCreate()
     {
         Label p1 = new Label("Blue:", 50);
@@ -102,7 +107,8 @@ public class MyWorld extends World
         addObject(p2, 45, 268);
         addObject(turn, 53, 414);
     }
-
+    
+    //When called increases blue score and decreases red score
     public void increaseScoreBlue()
     {
         blueNum++;
@@ -110,7 +116,8 @@ public class MyWorld extends World
         player1.setValue(blueNum);
         player2.setValue(redNum);
     }
-
+    
+    //When called increases red score and decreases blue score
     public void increaseScoreRed()
     {
         redNum++;
@@ -118,7 +125,13 @@ public class MyWorld extends World
         player1.setValue(blueNum);
         player2.setValue(redNum);
     }
-
+    
+    /*
+     * Changes the value next to the dice representing the number of tiles
+     * that can be taken that round
+     * 
+     * @param x The randomized number of tiles allowed to be taken
+     */
     public void setTiles(int x)
     {
         tilesTake = x;
@@ -132,12 +145,19 @@ public class MyWorld extends World
         }
         tiles.setValue(tilesTake);
     }
-
+    
+    //Reduces the number of tiles that can be taken
     public void decreaseTile()
     {
         tilesTake--;
         tiles.setValue(tilesTake);
     }
+    
+    /*
+     * Returns the winner in the form of a string
+     * 
+     * @return String of the winning colour
+     */
 
     public String giveWinner()
     {

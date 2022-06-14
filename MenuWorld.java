@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MenuWorld here.
+ * Displays the instructions for the game and creates a button to return
+ * to the main menu
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class MenuWorld extends World
 {
@@ -17,7 +18,7 @@ public class MenuWorld extends World
     {    
         // Create a new world with 1100x600 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1); 
-        backButton bac = new backButton();
+        BackButton bac = new BackButton();
         addObject(bac, 1000, 546);
     }
 }

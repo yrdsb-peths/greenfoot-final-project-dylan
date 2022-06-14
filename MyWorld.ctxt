@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MyWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Main\ world\ that\ has\ the\ game\r\n\ Creates\ the\ buttons\ and\ tiles\ for\ each\ country\ and\ methods\ to\ interact\ with\r\n\ other\ classes\r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
 comment1.params=
 comment1.target=MyWorld()
 comment2.params=
@@ -15,8 +15,10 @@ comment6.params=
 comment6.target=void\ increaseScoreRed()
 comment7.params=x
 comment7.target=void\ setTiles(int)
+comment7.text=\r\n\ Changes\ the\ value\ next\ to\ the\ dice\ representing\ the\ number\ of\ tiles\r\n\ that\ can\ be\ taken\ that\ round\r\n\ \r\n\ @param\ x\ The\ randomized\ number\ of\ tiles\ allowed\ to\ be\ taken\r\n
 comment8.params=
 comment8.target=void\ decreaseTile()
 comment9.params=
 comment9.target=java.lang.String\ giveWinner()
+comment9.text=\r\n\ Returns\ the\ winner\ in\ the\ form\ of\ a\ string\r\n\ \r\n\ @return\ String\ of\ the\ winning\ colour\r\n
 numComments=10

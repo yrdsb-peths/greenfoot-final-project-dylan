@@ -1,22 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Indicate here.
+ * Shows which players turn it is
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class Indicate extends Country
 {
-    /**
-     * Act - do whatever the Indicate wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public Indicate()
     {
         setImage("images/Red.png");
     }
-
+    //Change colour based on player state
     public void act()
     {
         if(player == 0)

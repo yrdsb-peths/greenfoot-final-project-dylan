@@ -1,24 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class France here.
+ * Create tile for France and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class France extends Country
 {
-    /**
-     * Act - do whatever the France wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-
+    //Set object to blue player
     public France()
     {
         stateFra = 1;
         setImage("images/France/France_Blue.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -26,6 +22,7 @@ public class France extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 fraClicked = 1;
+                //Check for Germany
                 if(stateFra != stateGer)
                 {
                     if(gerClicked == 1 && fraClicked == 1)
@@ -56,6 +53,7 @@ public class France extends Country
                         }
                     }
                 }
+                //Check for Italy
                 if(stateFra != stateIta)
                 {
                     if(itaClicked == 1 && fraClicked == 1)
@@ -87,6 +85,7 @@ public class France extends Country
                         }
                     }
                 }
+                //Check for Spain
                 if(stateFra != stateSpa)
                 {
                     if(spaClicked == 1 && fraClicked == 1)
@@ -118,6 +117,7 @@ public class France extends Country
                         }
                     }
                 }
+                //Check for UK
                 if(stateFra != stateUni)
                 {
                     if(uniClicked == 1 && fraClicked == 1)

@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AfricaSouth here.
+ * Creates tile for AfricaSouth and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class AfricaSouth extends Country
 {
-    /**
-     * Act - do whatever the AfricaSouth wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to blue player
     public AfricaSouth()
     {
         stateAfs = 1;
         setImage("images/AfricaSouth/AfricaSouth_Blue.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class AfricaSouth extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 afsClicked = 1;
+                //Check for AfricaWest
                 if(stateAfs != stateAfw)
                 {
                     if(afwClicked == 1 && afsClicked == 1)
@@ -56,6 +54,7 @@ public class AfricaSouth extends Country
                         }
                     }
                 }
+                //Check for AfricaCenter
                 if(stateAfs != stateAfc)
                 {
                     if(afcClicked == 1 && afsClicked == 1)
@@ -86,6 +85,7 @@ public class AfricaSouth extends Country
                         }
                     }
                 }
+                //Check for AfricaEast
                 if(stateAfs != stateAfe)
                 {
                     if(afeClicked == 1 && afsClicked == 1)

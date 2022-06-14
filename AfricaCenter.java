@@ -1,23 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AfricaCenter here.
+ * Creates the tile of AfricaCenter and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class AfricaCenter extends Country
 {
-    /**
-     * Act - do whatever the AfricaCenter wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Sets object to blue player
     public AfricaCenter()
     {
         stateAfc = 1;
         setImage("images/AfricaCenter/AfricaCenter_Blue.png");
     }
-
+    
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +23,7 @@ public class AfricaCenter extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 afcClicked = 1;
+                //Checks for AfricaWest
                 if(stateAfc != stateAfw)
                 {
                     if(afwClicked == 1 && afcClicked == 1)
@@ -55,6 +54,7 @@ public class AfricaCenter extends Country
                         }
                     }
                 }
+                //Checks for AfricaSouth
                 if(stateAfc != stateAfs)
                 {
                     if(afsClicked == 1 && afcClicked == 1)
@@ -85,6 +85,7 @@ public class AfricaCenter extends Country
                         }
                     }
                 }
+                //Checks for AfricaEast
                 if(stateAfc != stateAfe)
                 {
                     if(afeClicked == 1 && afcClicked == 1)
@@ -115,6 +116,7 @@ public class AfricaCenter extends Country
                         }
                     }
                 }
+                //Checks for AfricaNorth
                 if(stateAfc != stateAfn)
                 {
                     if(afnClicked == 1 && afcClicked == 1)

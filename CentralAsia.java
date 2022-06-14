@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class CentralAsia here.
+ * Create tile for CentralAsia and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class CentralAsia extends Country
 {
-    /**
-     * Act - do whatever the CentralAsia wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Sets object to blue player
     public CentralAsia()
     {
         stateCea = 1;
         setImage("images/CentralAsia/CentralAsia_Blue.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class CentralAsia extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 ceaClicked = 1;
+                //Check for Arabia
                 if(stateCea != stateAra)
                 {
                     if(ceaClicked == 1 && araClicked == 1)
@@ -55,6 +53,7 @@ public class CentralAsia extends Country
                         }
                     }
                 }
+                //Check for RussiaWest
                 if(stateCea != stateRuw)
                 {
                     if(ceaClicked == 1 && ruwClicked == 1)
@@ -85,6 +84,7 @@ public class CentralAsia extends Country
                         }
                     }
                 }
+                //Checks for India
                 if(stateCea != stateInd)
                 {
                     if(ceaClicked == 1 && indClicked == 1)
@@ -115,6 +115,7 @@ public class CentralAsia extends Country
                         }
                     }
                 }
+                //Checks for RussiaMid
                 if(stateCea != stateRum)
                 {
                     if(rumClicked == 1 && ceaClicked == 1)
@@ -145,6 +146,7 @@ public class CentralAsia extends Country
                         }
                     }
                 }
+                //Checks for China
                 if(stateCea != stateChi)
                 {
                     if(chiClicked == 1 && ceaClicked == 1)

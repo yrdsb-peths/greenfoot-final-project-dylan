@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleWorld here.
+ * Title screen that is shown when starting the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class TitleWorld extends World
 {
@@ -24,10 +24,5 @@ public class TitleWorld extends World
         addObject(ins, 972, 552);
         Play pla = new Play();
         addObject(pla, 130, 551);
-    }
-
-    public void act()
-    {
-
     }
 }

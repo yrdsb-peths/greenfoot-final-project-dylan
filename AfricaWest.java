@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AfricaWest here.
+ * Create tile for AfricaWest and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class AfricaWest extends Country
 {
-    /**
-     * Act - do whatever the AfricaWest wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public AfricaWest()
     {
         stateAfw = 2;
         setImage("images/AfricaWest/AfricaWest_Red.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class AfricaWest extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 afwClicked = 1;
+                //Check for Spain
                 if(stateAfw != stateSpa)
                 {
                     if(afwClicked == 1 && spaClicked == 1)
@@ -55,6 +53,7 @@ public class AfricaWest extends Country
                         }
                     }
                 }
+                //Check for AfricaSouth
                 if(stateAfw != stateAfs)
                 {
                     if(afwClicked == 1 && afsClicked == 1)
@@ -85,6 +84,7 @@ public class AfricaWest extends Country
                         }
                     }
                 }
+                //Check for AfricaCenter
                 if(stateAfw != stateAfc)
                 {
                     if(afwClicked == 1 && afcClicked == 1)
@@ -115,6 +115,7 @@ public class AfricaWest extends Country
                         }
                     }
                 }
+                //Check for AfricaNorth
                 if(stateAfw != stateAfn)
                 {
                     if(afwClicked == 1 && afnClicked == 1)

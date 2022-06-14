@@ -1,17 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Die here.
+ * Animate the dice to spin
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class Die extends RandomizerDice
 {
-    /**
-     * Act - do whatever the Die wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Creates array for dice images
     private GreenfootImage[] diceImages;
     private SimpleTimer timer;
     private int counter = 0;
@@ -30,6 +27,7 @@ public class Die extends RandomizerDice
         rand = 0;
         player = 0;
     }
+    //Change the image to create animation
     int curIndex = 0;
     void animate()
     {
@@ -44,7 +42,7 @@ public class Die extends RandomizerDice
             timer.mark();
         }
     }
-
+    //Start animation when roll button is clicked
     public void act()
     {   
         if(rolled == 1)

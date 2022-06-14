@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Italy here.
+ * Create tile for Italy and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class Italy extends Country
 {
-    /**
-     * Act - do whatever the Italy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public Italy()
     {
         stateIta = 2;
         setImage("images/Italy/Italy_Red.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class Italy extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 itaClicked = 1;
+                //Check for Germany
                 if(stateIta != stateGer)
                 {
                     if(gerClicked == 1 && itaClicked == 1)
@@ -55,6 +53,7 @@ public class Italy extends Country
                         }
                     }
                 }
+                //Check for France
                 if(stateIta != stateFra)
                 {
                     if(fraClicked == 1 && itaClicked == 1)
@@ -85,36 +84,7 @@ public class Italy extends Country
                         }
                     }
                 }
-                if(stateIta != stateFra)
-                {
-                    if(fraClicked == 1 && itaClicked == 1)
-                    {
-                        if(stateIta == 1)
-                        {
-                            if(player == 0)
-                            {
-                                setImage("images/Italy/Italy_Red.png");
-                                fraClicked = 0;
-                                itaClicked = 0;
-                                stateIta = 0;
-                                MyWorld world = (MyWorld) getWorld();
-                                world.increaseScoreRed();
-                                world.decreaseTile();
-                            }
-                        }else{
-                            if(player == 1)
-                            {
-                                setImage("images/Italy/Italy_Blue.png");
-                                fraClicked = 0;
-                                itaClicked = 0;
-                                stateIta = 1;
-                                MyWorld world = (MyWorld) getWorld();
-                                world.increaseScoreBlue();
-                                world.decreaseTile();
-                            }
-                        }
-                    }
-                }
+                //Check for RussiaWest
                 if(stateIta != stateRuw)
                 {
                     if(ruwClicked == 1 && itaClicked == 1)

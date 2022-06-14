@@ -1,6 +1,4 @@
 #BlueJ class context
 comment0.target=Country
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Country\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment0.text=\r\n\ Stores\ variables\ for\ each\ country\r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
+numComments=1

@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class China here.
+ * Create tile for China and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class China extends Country
 {
-    /**
-     * Act - do whatever the China wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public China()
     {
         stateChi = 2;
         setImage("images/China/China_Red.png"); 
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class China extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 chiClicked = 1;
+                //Checks for RussiaMid
                 if(stateChi != stateRum)
                 {
                     if(rumClicked == 1 && chiClicked == 1)
@@ -55,6 +53,7 @@ public class China extends Country
                         }
                     }
                 }
+                //Checks for RussiaEast
                 if(stateChi != stateRue)
                 {
                     if(rueClicked == 1 && chiClicked == 1)
@@ -85,6 +84,7 @@ public class China extends Country
                         }
                     }
                 }
+                //Checks for CentralAsia
                 if(stateChi != stateCea)
                 {
                     if(ceaClicked == 1 && chiClicked == 1)
@@ -115,6 +115,7 @@ public class China extends Country
                         }
                     }
                 }
+                //Check for India
                 if(stateChi != stateInd)
                 {
                     if(indClicked == 1 && chiClicked == 1)
@@ -145,6 +146,7 @@ public class China extends Country
                         }
                     }
                 }
+                //Check for Thailand
                 if(stateChi != stateTha)
                 {
                     if(thaClicked == 1 && chiClicked == 1)

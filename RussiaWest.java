@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RussiaWest here.
+ * Create tile for RussiaWest and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta 
+ * @version June, 2022
  */
 public class RussiaWest extends Country
 {
-    /**
-     * Act - do whatever the RussiaWest wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to blue player
     public RussiaWest()
     {
         stateRuw = 1;
         setImage("images/RussiaWest/RussiaWest_Blue.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class RussiaWest extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 ruwClicked = 1;
+                //Check for Sweden
                 if(stateRuw != stateSwe)
                 {
                     if(sweClicked == 1 && ruwClicked == 1)
@@ -55,6 +53,7 @@ public class RussiaWest extends Country
                         }
                     }
                 }
+                //Check for Italy
                 if(stateRuw != stateIta)
                 {
                     if(itaClicked == 1 && ruwClicked == 1)
@@ -85,6 +84,7 @@ public class RussiaWest extends Country
                         }
                     }
                 }
+                //Check for Germany
                 if(stateRuw != stateGer)
                 {
                     if(gerClicked == 1 && ruwClicked == 1)
@@ -115,6 +115,7 @@ public class RussiaWest extends Country
                         }
                     }
                 }
+                //Check for CentralAsia
                 if(stateRuw != stateCea)
                 {
                     if(ceaClicked == 1 && ruwClicked == 1)
@@ -145,6 +146,7 @@ public class RussiaWest extends Country
                         }
                     }
                 }
+                //Check for RussiaMid
                 if(stateRuw != stateRum)
                 {
                     if(rumClicked == 1 && ruwClicked == 1)

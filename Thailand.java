@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Thailand here.
+ *  Create tile for Thailand and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta 
+ * @version June, 2022
  */
 public class Thailand extends Country
 {
-    /**
-     * Act - do whatever the Thailand wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to blue player
     public Thailand()
     {
         stateTha = 1;
         setImage("images/Thailand/Thailand_Blue.png");  
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class Thailand extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 thaClicked = 1;
+                //Check for China
                 if(stateTha != stateChi)
                 {
                     if(thaClicked == 1 && chiClicked == 1)

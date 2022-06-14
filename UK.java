@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class UK here.
+ * Create tile for UK and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta 
+ * @version June, 2022
  */
 public class UK extends Country
 {
-    /**
-     * Act - do whatever the UK wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Set object to red player
     public UK()
     {
         stateUni = 2;
         setImage("images/UK/UK_Red.png");  
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class UK extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 uniClicked = 1;
+                //Check for France
                 if(stateUni != stateFra)
                 {
                     if(fraClicked == 1 && uniClicked == 1)

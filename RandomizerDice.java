@@ -1,21 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RandomizerDice here.
+ * Stores varibales for dice
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class RandomizerDice extends Country
 {
-    /**
-     * Act - do whatever the RandomizerDice wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Holds variables for the dice
     static int rolled = 0;
     static int rand = 0;
-    public void act()
-    {
-        // Add your action code here.
-    }
 }

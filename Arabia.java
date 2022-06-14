@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Arabia here.
+ * Create tile for Arabia and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class Arabia extends Country
 {
-    /**
-     * Act - do whatever the Arabia wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Sets objects to red player
     public Arabia()
     {
         stateAra = 2;
         setImage("images/Arabia/Arabia_Red.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class Arabia extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 araClicked = 1;
+                //Checks for AfricaNorth
                 if(stateAra != stateAfn)
                 {
                     if(araClicked == 1 && afnClicked == 1)
@@ -55,6 +53,7 @@ public class Arabia extends Country
                         }
                     }
                 }
+                //Checks for CentralAsia
                 if(stateAra != stateCea)
                 {
                     if(araClicked == 1 && ceaClicked == 1)
@@ -85,6 +84,7 @@ public class Arabia extends Country
                         }
                     }
                 }
+                //Checks for India
                 if(stateAra != stateInd)
                 {
                     if(araClicked == 1 && indClicked == 1)

@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AfricaNorth here.
+ * Creates tile for AfricaNorth and checks for attacks
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Dylan Ta
+ * @version June, 2022
  */
 public class AfricaNorth extends Country
 {
-    /**
-     * Act - do whatever the AfricaNorth wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    //Sets object to blue player
     public AfricaNorth()
     {
         stateAfn = 1;
         setImage("images/AfricaNorth/AfricaNorth_Blue.png");
     }
-
+    //When attacked by an adjacent tile, change colour to match the attacker
     public void act()
     {
         if(MyWorld.tilesTake > 0)
@@ -25,6 +22,7 @@ public class AfricaNorth extends Country
             if(Greenfoot.mouseClicked(this))
             {
                 afnClicked = 1;
+                //Check for AfricaCenter
                 if(stateAfn != stateAfc)
                 {
                     if(afnClicked == 1 && afcClicked == 1)
@@ -55,6 +53,7 @@ public class AfricaNorth extends Country
                         }
                     }
                 }
+                //Check for AfricaWest
                 if(stateAfn != stateAfw)
                 {
                     if(afnClicked == 1 && afwClicked == 1)
@@ -85,6 +84,7 @@ public class AfricaNorth extends Country
                         }
                     }
                 }
+                //Check for AfricaEast
                 if(stateAfn != stateAfe)
                 {
                     if(afnClicked == 1 && afeClicked == 1)
@@ -115,6 +115,7 @@ public class AfricaNorth extends Country
                         }
                     }
                 }
+                //Checks for Arabia
                 if(stateAfn != stateAra)
                 {
                     if(afnClicked == 1 && araClicked == 1)
