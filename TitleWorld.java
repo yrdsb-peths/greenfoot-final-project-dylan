@@ -2,6 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Title screen that is shown when starting the game
+ * Image from: https://store.steampowered.com/app/1128810/RISK_Global_Domination/
  * 
  * @author Dylan Ta
  * @version June, 2022

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=TitleWorld
-comment0.text=\r\n\ Title\ screen\ that\ is\ shown\ when\ starting\ the\ game\r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
+comment0.text=\r\n\ Title\ screen\ that\ is\ shown\ when\ starting\ the\ game\r\n\ Image\ from\:\ https\://store.steampowered.com/app/1128810/RISK_Global_Domination/\r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
 comment1.params=
 comment1.target=TitleWorld()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TitleWorld.\r\n\ \r\n

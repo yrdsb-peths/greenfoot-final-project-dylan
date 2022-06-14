@@ -2,6 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Creates the button that starts the game
+ * Trophy image from: https://stock.adobe.com/ca/search?k=trophy
  * 
  * @author Dylan Ta 
  * @version June, 2022
