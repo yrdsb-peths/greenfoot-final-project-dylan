@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Dylan Ta 
  * @version June, 2022
  */
-public class backButton extends Actor
+public class BackButton extends Actor
 {
     //Return to TitleWorld
     public void act()
