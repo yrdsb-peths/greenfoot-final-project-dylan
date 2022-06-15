@@ -13,6 +13,7 @@ public class Instructions extends Actor
     {
         if(Greenfoot.mouseClicked(this))
         {
+            Greenfoot.playSound("sounds/minecraft_click.mp3");
             MenuWorld world = new MenuWorld();
             Greenfoot.setWorld(world);
         }

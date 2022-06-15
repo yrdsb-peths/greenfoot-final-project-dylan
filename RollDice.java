@@ -18,6 +18,7 @@ public class RollDice extends RandomizerDice
                 rolled = 1;
                 rand = Greenfoot.getRandomNumber(18);
                 once = 1;
+                Greenfoot.playSound("sounds/minecraft_click.mp3");
             }
         }
         if(Greenfoot.mouseMoved(this))

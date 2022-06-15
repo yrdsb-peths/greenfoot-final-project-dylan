@@ -14,6 +14,7 @@ public class Play extends Actor
     {
         if(Greenfoot.mouseClicked(this))
         {
+            Greenfoot.playSound("sounds/minecraft_click.mp3");
             MyWorld world = new MyWorld();
             Greenfoot.setWorld(world);
         }

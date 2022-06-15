@@ -15,11 +15,13 @@ public class TurnEnd extends RandomizerDice
         {
             if(player == 0)
             {
+                Greenfoot.playSound("sounds/minecraft_click.mp3");
                 player = 1;
                 rolled = 0;
                 rand = 0;
                 once = 0;
             }else{
+                Greenfoot.playSound("sounds/minecraft_click.mp3");
                 player = 0;
                 once = 0;
                 rolled = 0;
