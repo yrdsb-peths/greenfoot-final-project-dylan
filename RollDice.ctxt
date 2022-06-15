@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RollDice
-comment0.text=\r\n\ Rolls\ the\ dice\ when\ clicked\r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
+comment0.text=\r\n\ Rolls\ the\ dice\ when\ clicked\r\n\ Sound\ from\:\ https\://www.myinstants.com/en/instant/minecraft-click/\ \r\n\ \r\n\ @author\ Dylan\ Ta\r\n\ @version\ June,\ 2022\r\n
 comment1.params=
 comment1.target=void\ act()
 numComments=2

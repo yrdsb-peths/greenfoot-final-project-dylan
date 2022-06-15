@@ -2,6 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Animate the dice to spin
+ * Sounds from: https://soundbible.com/tags-rolling-dice.html
  * 
  * @author Dylan Ta
  * @version June, 2022
