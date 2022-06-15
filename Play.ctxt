@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Play
-comment0.text=\r\n\ Creates\ the\ button\ that\ starts\ the\ game\r\n\ Trophy\ image\ from\:\ https\://stock.adobe.com/ca/search?k\=trophy\r\n\ \r\n\ \r\n\ @author\ Dylan\ Ta\ \r\n\ @version\ June,\ 2022\r\n
+comment0.text=\r\n\ Creates\ the\ button\ that\ starts\ the\ game\r\n\ Trophy\ image\ from\:\ https\://stock.adobe.com/ca/search?k\=trophy\r\n\ Sound\ from\:\ https\://www.myinstants.com/en/instant/minecraft-click/\ \r\n\ \r\n\ @author\ Dylan\ Ta\ \r\n\ @version\ June,\ 2022\r\n
 comment1.params=
 comment1.target=void\ act()
 numComments=2
