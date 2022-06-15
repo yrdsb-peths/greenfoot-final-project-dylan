@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=backButton
+comment0.target=BackButtons
 comment0.text=\r\n\ Button\ return\ from\ instructions\ to\ title\ world\r\n\ Sound\ from\:\ https\://www.myinstants.com/en/instant/minecraft-click/\ \r\n\ \r\n\ @author\ Dylan\ Ta\ \r\n\ @version\ June,\ 2022\r\n
 comment1.params=
 comment1.target=void\ act()
